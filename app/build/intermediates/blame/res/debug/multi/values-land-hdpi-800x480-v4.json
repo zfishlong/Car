@@ -1,0 +1,159 @@
+[
+    {
+        "outputFile": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\values-land-hdpi-800x480-v4\\values-land-hdpi-800x480-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 54,
+                    "endOffset": 105
+                },
+                "from": {
+                    "file": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\values-land-hdpi-800x480\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 54,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 110,
+                    "endColumn": 52,
+                    "endOffset": 158
+                },
+                "from": {
+                    "file": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\values-land-hdpi-800x480\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 111,
+                        "endColumn": 52,
+                        "endOffset": 159
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 163,
+                    "endColumn": 49,
+                    "endOffset": 208
+                },
+                "from": {
+                    "file": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\values-land-hdpi-800x480\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 164,
+                        "endColumn": 49,
+                        "endOffset": 209
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 213,
+                    "endColumn": 54,
+                    "endOffset": 263
+                },
+                "from": {
+                    "file": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\values-land-hdpi-800x480\\dimens.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 356,
+                        "endColumn": 54,
+                        "endOffset": 406
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 268,
+                    "endColumn": 50,
+                    "endOffset": 314
+                },
+                "from": {
+                    "file": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\values-land-hdpi-800x480\\dimens.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 305,
+                        "endColumn": 50,
+                        "endOffset": 351
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 319,
+                    "endColumn": 59,
+                    "endOffset": 374
+                },
+                "from": {
+                    "file": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\values-land-hdpi-800x480\\dimens.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 449,
+                        "endColumn": 59,
+                        "endOffset": 504
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 379,
+                    "endColumn": 45,
+                    "endOffset": 420
+                },
+                "from": {
+                    "file": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\values-land-hdpi-800x480\\dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 259,
+                        "endColumn": 45,
+                        "endOffset": 300
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 425,
+                    "endColumn": 44,
+                    "endOffset": 465
+                },
+                "from": {
+                    "file": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\values-land-hdpi-800x480\\dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 214,
+                        "endColumn": 44,
+                        "endOffset": 254
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,669 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:2:1-398:12
+	package
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:5:5-36
+		INJECTED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:4:5-30
+		INJECTED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\xiaoJie\AndroidStudioProjects\Car\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+	android:targetSdkVersion
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:8:9-34
+		INJECTED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:11:5-71
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:11:22-68
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:12:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:13:5-76
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:13:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:14:5-76
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:14:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:15:22-76
+uses-permission#android.permission.READ_LOGS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:16:5-68
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:16:22-65
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:17:5-75
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:17:22-72
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:18:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:19:5-75
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:19:22-72
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:20:5-78
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:20:22-75
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:21:5-71
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:21:22-68
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:22:5-74
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:22:22-71
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:23:5-74
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:23:22-71
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:24:5-84
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:24:22-81
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:25:5-80
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:25:22-77
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:26:5-75
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:26:22-72
+uses-permission#android.permission.READ_CONTACTS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:27:5-72
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:27:22-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:28:5-81
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:28:22-78
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:29:5-73
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:29:22-70
+uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:30:5-80
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:30:22-77
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:31:5-74
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:31:22-71
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:32:5-68
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:32:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:33:5-66
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:33:22-63
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:34:5-79
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:34:22-76
+uses-permission#android.permission.CALL_PHONE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:35:5-69
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:35:22-66
+uses-permission#android.permission.READ_SMS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:36:5-67
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:36:22-64
+uses-permission#android.permission.WRITE_SMS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:37:5-68
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:37:22-65
+uses-permission#android.permission.SEND_SMS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:38:5-67
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:38:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:39:5-79
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:39:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:40:5-81
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:40:22-78
+uses-permission#android.permission.BAIDU_LOCATION_SERVICE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:41:5-81
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:41:22-78
+uses-permission#android.permission.ACCESS_MOCK_LOCATION
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:42:5-79
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:42:22-76
+uses-permission#com.android.launcher.permission.READ_SETTINGS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:43:5-85
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:43:22-82
+uses-permission#android.permission.ACCESS_GPS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:44:5-69
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:44:22-66
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:45:5-70
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:45:22-67
+uses-permission#android.permission.RECEIVE_MMS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:46:5-70
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:46:22-67
+uses-permission#android.permission.GET_TASKS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:47:5-68
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:47:22-65
+uses-permission#android.permission.READ_CHATHISTORY
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:48:5-75
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:48:22-72
+uses-permission#android.permission.WRITE_CHATHISTORY
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:49:5-76
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:49:22-73
+supports-screens
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:51:5-56:39
+	android:largeScreens
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:53:9-36
+	android:smallScreens
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:56:9-36
+	android:normalScreens
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:54:9-38
+	android:resizeable
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:55:9-34
+	android:anyDensity
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:52:9-34
+uses-permission#android.permission.RESTART_PACKAGES
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:58:5-75
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:58:22-72
+application
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:60:5-396:19
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\xiaoJie\AndroidStudioProjects\Car\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
+	android:label
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:64:9-41
+	android:allowBackup
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:62:9-35
+	android:icon
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:63:9-45
+	android:largeHeap
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:65:9-33
+	android:theme
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:66:9-40
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:61:9-53
+meta-data#com.amap.api.v2.apikey
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:77:9-79:64
+	android:value
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:79:13-61
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:78:13-50
+meta-data#com.baidu.lbsapi.API_KEY
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:87:9-89:56
+	android:value
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:89:13-53
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:88:13-52
+activity#com.unisound.unicar.gui.ui.WelcomeActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:91:9-96:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:95:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:94:13-44
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:93:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:92:13-70
+activity#com.unisound.unicar.gui.ui.GUIMainActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:97:9-107:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:101:13-50
+	android:label
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:99:13-45
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:100:13-44
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:98:13-70
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:102:13-106:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:103:17-69
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:103:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:105:17-77
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:105:27-74
+activity#com.unisound.unicar.gui.ui.FunctionHelpActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:112:9-117:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:116:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:115:13-44
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:114:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:113:13-75
+activity#com.unisound.unicar.gui.ui.AddressFavoriteActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:119:9-124:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:123:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:122:13-43
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:121:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:120:13-78
+activity#com.unisound.unicar.gui.ui.AddAddressActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:125:9-131:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:130:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:128:13-43
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:127:13-63
+	android:theme
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:129:13-83
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:126:13-73
+activity#com.unisound.unicar.gui.ui.OTAActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:133:9-138:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:137:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:136:13-43
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:135:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:134:13-66
+activity#com.unisound.unicar.gui.ui.AboutActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:139:9-144:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:143:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:142:13-43
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:141:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:140:13-68
+activity#com.unisound.unicar.gui.ui.HelpActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:147:9-152:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:151:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:150:13-44
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:149:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:148:13-67
+activity#com.unisound.unicar.gui.ui.AllFunctionsActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:155:9-160:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:159:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:158:13-43
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:157:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:156:13-75
+activity#com.unisound.unicar.gui.ui.SettingsViewPagerActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:161:9-166:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:165:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:164:13-43
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:163:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:162:13-80
+activity#com.unisound.unicar.gui.ui.PushListActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:167:9-172:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:171:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:170:13-43
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:169:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:168:13-71
+activity#com.unisound.unicar.gui.ui.PositionActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:174:9-179:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:178:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:177:13-43
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:176:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:175:13-71
+activity#com.unisound.unicar.gui.ui.SettingMapViewPagerActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:182:9-187:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:186:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:185:13-43
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:184:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:183:13-82
+activity#com.unisound.unicar.gui.ui.MobileConnectionActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:191:9-196:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:195:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:194:13-43
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:193:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:192:13-79
+activity#com.unisound.unicar.gui.route.operation.GaodeLocationActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:199:9-204:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:203:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:202:13-44
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:201:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:200:13-89
+activity#com.unisound.unicar.gui.route.operation.GaodeRouteActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:205:9-210:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:209:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:208:13-44
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:207:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:206:13-86
+activity#com.unisound.unicar.gui.route.baidu.LocationOverlayActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:211:9-216:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:215:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:214:13-44
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:213:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:212:13-87
+activity#com.unisound.unicar.gui.route.baidu.RouteOverlayNoMap
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:217:9-221:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:220:13-50
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:219:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:218:13-81
+activity#com.unisound.unicar.gui.route.baidu.RouteOverlayActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:222:9-227:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:226:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:225:13-44
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:224:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:223:13-84
+activity#com.unisound.unicar.gui.smsdefault.ComposeSmsActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:232:9-245:20
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:232:19-87
+intent-filter#android.intent.action.SEND+android.intent.action.SENDTO+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:233:13-244:29
+action#android.intent.action.SEND
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:234:17-69
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:234:25-66
+action#android.intent.action.SENDTO
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:235:17-71
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:235:25-68
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:237:17-76
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:237:27-73
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:238:17-78
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:238:27-75
+data
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:240:17-46
+	android:scheme
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:240:23-43
+activity#com.unisound.unicar.gui.ui.AmapTrafficShowActivity
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:247:9-251:20
+	android:screenOrientation
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:250:13-50
+	android:launchMode
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:249:13-44
+	android:configChanges
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:248:13-63
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:247:19-84
+service#com.unisound.unicar.gui.smsdefault.HeadlessSmsSendService
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:254:9-268:19
+	android:exported
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:256:13-36
+	android:permission
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:257:13-77
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:255:13-85
+intent-filter#android.intent.action.RESPOND_VIA_MESSAGE+android.intent.category.DEFAULT
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:258:13-267:29
+action#android.intent.action.RESPOND_VIA_MESSAGE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:259:17-84
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:259:25-81
+receiver#com.unisound.unicar.gui.smsdefault.SmsReceiver
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:271:9-277:20
+	android:permission
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:273:13-66
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:272:13-74
+intent-filter#android.provider.Telephony.SMS_DELIVER
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:274:13-276:29
+action#android.provider.Telephony.SMS_DELIVER
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:275:17-81
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:275:25-78
+receiver#com.unisound.unicar.gui.smsdefault.MmsReceiver
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:280:9-288:20
+	android:permission
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:282:13-71
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:281:13-74
+intent-filter#android.provider.Telephony.WAP_PUSH_DELIVER
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:283:13-287:29
+action#android.provider.Telephony.WAP_PUSH_DELIVER
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:284:17-86
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:284:25-83
+receiver#com.unisound.unicar.gui.sms.SmsSendReceiver
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:293:9-304:20
+	android:exported
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:295:13-37
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:294:13-71
+intent-filter#com.unisound.intent.action.MESSAGE_SENT
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:296:13-300:29
+action#com.unisound.intent.action.MESSAGE_SENT
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:297:17-82
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:297:25-79
+intent-filter#com.unisound.intent.action.SEND_MESSAGE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:301:13-303:29
+action#com.unisound.intent.action.SEND_MESSAGE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:302:17-82
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:302:25-79
+receiver#com.unisound.unicar.gui.sms.MessageStatusReceiver
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:307:9-313:20
+	android:exported
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:309:13-37
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:308:13-77
+intent-filter#com.unisound.intent.action.MESSAGE_STATUS_RECEIVED
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:310:13-312:29
+action#com.unisound.intent.action.MESSAGE_STATUS_RECEIVED
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:311:17-93
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:311:25-90
+receiver#com.unisound.unicar.gui.phone.PhoneStateReceiver
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:314:9-319:20
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:314:19-82
+intent-filter#android.intent.action.NEW_OUTGOING_CALL+android.intent.action.PHONE_STATE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:315:13-318:29
+action#android.intent.action.NEW_OUTGOING_CALL
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:316:17-82
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:316:25-79
+action#android.intent.action.PHONE_STATE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:317:17-76
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:317:25-73
+service#com.unisound.unicar.gui.ui.WindowService
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:324:9-328:19
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:324:18-73
+intent-filter#com.unisound.unicar.gui.ui.START_WINDOWSERVICE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:325:13-327:29
+action#com.unisound.unicar.gui.ui.START_WINDOWSERVICE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:326:17-88
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:326:25-86
+service#com.unisound.unicar.gui.sms.SmsSenderService
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:332:9-80
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:332:18-77
+service#com.unisound.unicar.gui.uninavi.UniCarNaviGuiService
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:335:9-339:19
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:335:18-85
+intent-filter#com.unisound.intent.action.START_UNICARNAVI_GUI_SERVICE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:336:13-338:29
+action#com.unisound.intent.action.START_UNICARNAVI_GUI_SERVICE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:337:17-98
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:337:25-95
+service#com.unisound.unicar.gui.fm.UniDriveFmGuiService
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:342:9-346:19
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:342:18-80
+intent-filter#com.unisound.intent.action.START_UNIDRIVE_FM
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:343:13-345:29
+action#com.unisound.intent.action.START_UNIDRIVE_FM
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:344:17-87
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:344:25-84
+service#com.unisound.unicar.gui.fm.XmFmGuiService
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:347:9-351:19
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:347:18-74
+intent-filter#com.unisound.intent.action.START_XM_FM
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:348:13-350:29
+action#com.unisound.intent.action.START_XM_FM
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:349:17-81
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:349:25-78
+service#com.android.kwmusic.KWMusicService
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:352:9-354:41
+	android:persistent
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:354:13-38
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:353:13-62
+service#com.baidu.location.f
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:355:9-359:19
+	android:enabled
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:357:13-35
+	android:process
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:358:13-38
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:356:13-48
+receiver#com.unisound.unicar.gui.ui.MessageReceiver
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:361:9-372:20
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:361:19-76
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:362:13-364:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:363:17-79
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:363:25-76
+intent-filter#com.unisound.intent.action.CANCEL_TALK+com.unisound.intent.action.PLAY_TTS+com.unisound.intent.action.START_TALK+com.unisound.intent.action.STOP_DORMANT+com.unisound.intent.action.STOP_TALK
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:365:13-371:29
+action#com.unisound.intent.action.START_TALK
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:366:17-80
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:366:25-77
+action#com.unisound.intent.action.CANCEL_TALK
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:367:17-81
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:367:25-78
+action#com.unisound.intent.action.STOP_TALK
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:368:17-79
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:368:25-76
+action#com.unisound.intent.action.PLAY_TTS
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:369:17-78
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:369:25-75
+action#com.unisound.intent.action.STOP_DORMANT
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:370:17-82
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:370:25-79
+receiver#com.unisound.unicar.gui.oem.RomCustomReceiver
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:375:9-379:20
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:375:19-79
+intent-filter#cn.yunzhisheng.intent.action.custom.order.contact
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:376:13-378:29
+action#cn.yunzhisheng.intent.action.custom.order.contact
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:377:17-92
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:377:25-89
+receiver#com.unisound.unicar.gui.oem.RomCustomSettingReceiver
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:382:9-386:20
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:382:19-86
+intent-filter#com.unisound.intent.action.custom.SETTING_CONVERSATION_MODE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:383:13-385:29
+action#com.unisound.intent.action.custom.SETTING_CONVERSATION_MODE
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:384:17-102
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:384:25-99
+provider#com.unisound.unicar.gui.chat.ChatContentProvider
+ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:389:9-395:78
+	android:readPermission
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:394:13-73
+	android:authorities
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:391:13-76
+	android:label
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:393:13-48
+	android:exported
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:392:13-36
+	android:name
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:390:13-76
+	android:writePermission
+		ADDED from C:\Users\xiaoJie\AndroidStudioProjects\Car\app\src\main\AndroidManifest.xml:395:13-75

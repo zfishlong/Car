@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_right.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_right.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_right_in.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\slide_right_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_mic_recording.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\anim_mic_recording.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_right_out.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\slide_right_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\function_translate_in.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\function_translate_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\popup_exit.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_mic_prepare.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\anim_mic_prepare.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_up_in.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\push_up_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_left.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\slide_out_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\waiting.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\waiting.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_up_out.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\push_up_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\function_translate_out.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\function_translate_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\popup_enter.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\anim_loading_chat.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\anim_loading_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_left.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\anim\\slide_in_left.xml"
+    }
+]

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:MyView="http://schemas.android.com/apk/res/com.unisound.unicar.gui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_page_background"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/speakPannel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/startSpeak"
+            android:layout_width="@dimen/main_mic_pic_size"
+            android:layout_height="@dimen/main_mic_pic_size"
+            android:layout_centerInParent="true"
+            android:background="@drawable/main_btn_mic"
+            android:contentDescription="@null" />
+
+        <!-- wakeup closed -->
+
+        <LinearLayout
+            android:id="@+id/ll_help_text_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="@dimen/main_top_help_text_paddingTop"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tvHelpTextBegin"
+                style="@style/f2_main_head_help_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_auto_help_text_begin" />
+
+            <!-- textSize = @dimen/text_size_f2 -->
+
+            <com.unisound.unicar.gui.view.AutoTextView
+                android:id="@+id/tvAutoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                MyView:textColor="@color/color_main_auto_help_text"
+                MyView:textSize="@dimen/text_size_f2"
+                android:text="@string/app_version" />
+        </LinearLayout>
+
+        <!-- wakeup open -->
+
+        <LinearLayout
+            android:id="@+id/ll_help_text_wakeup_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/main_top_help_text_paddingTop"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/f2_main_head_help_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_help_text_wakeup_prefix" />
+
+                <TextView
+                    android:id="@+id/tvWakeupHelpText"
+                    style="@style/text_wakeup_word_f2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/f2_main_head_help_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_help_text_wakeup_suffix" />
+
+                <ImageView
+                    android:id="@+id/iv_edit_wakeupword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/selector_btn_edit_location"
+                    android:visibility="visible" 
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="24dp">
+            <ImageView
+	            android:id="@+id/iv_main_menu_more"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/btn_main_menu_more" 
+	            android:contentDescription="@null"/>
+            <ImageView
+	            android:id="@+id/push_no_read_icon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/red_icon" 
+	            android:layout_alignRight="@id/iv_main_menu_more"
+	            android:contentDescription="@null"
+	            android:visibility="gone"/>
+        </RelativeLayout>
+
+        
+        <com.unisound.unicar.gui.view.CircleImageView
+            android:id="@+id/iv_connect_mobie"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="visible"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+    <!-- android:background="@drawable/selector_btn_connect_mobile" -->
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_home_button_shadow" />
+
+    <LinearLayout
+        android:id="@+id/layout_main_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <!-- First vertical layout -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 1-Navigation -->
+
+            <FrameLayout
+                android:id="@+id/main_layout_navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/icon_home_navigation_bg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/text_assist_2_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/homepage_title_text_margin_left"
+                    android:paddingTop="@dimen/homepage_title_text_margin_top"
+                    android:text="@string/map_navigation" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/map_navigation"
+                        android:src="@drawable/icon_home_navigation" />
+
+                    <TextView
+                        android:id="@+id/tv_help_text_poi"
+                        style="@style/text_session_item_f4_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/homepage_text_margin_text"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- 2-Call -->
+
+            <FrameLayout
+                android:id="@+id/main_layout_call"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/icon_home_call_bg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/text_assist_2_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/homepage_title_text_margin_left"
+                    android:paddingTop="@dimen/homepage_title_text_margin_top"
+                    android:text="@string/main_phone_call" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/map_navigation"
+                        android:src="@drawable/icon_home_call" />
+
+                    <TextView
+                        android:id="@+id/tv_help_text_call"
+                        style="@style/text_session_item_f4_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/homepage_text_margin_text"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Second vertical layout -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 3-music -->
+
+            <FrameLayout
+                android:id="@+id/main_layout_music"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/icon_home_music_bg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/text_assist_2_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/homepage_title_text_margin_left"
+                    android:paddingTop="@dimen/homepage_title_text_margin_top"
+                    android:text="@string/music_play" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/music_play"
+                        android:src="@drawable/icon_home_music" />
+
+                    <TextView
+                        android:id="@+id/tv_help_text_music"
+                        style="@style/text_session_item_f4_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/homepage_text_margin_text"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- 4-local search -->
+
+            <FrameLayout
+                android:id="@+id/main_layout_localsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/icon_home_local_search_bg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/text_assist_2_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/homepage_title_text_margin_left"
+                    android:paddingTop="@dimen/homepage_title_text_margin_top"
+                    android:text="@string/main_local_search" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/map_navigation"
+                        android:src="@drawable/icon_home_local_search" />
+
+                    <TextView
+                        android:id="@+id/tv_help_text_local_search"
+                        style="@style/text_session_item_f4_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/homepage_text_margin_text"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

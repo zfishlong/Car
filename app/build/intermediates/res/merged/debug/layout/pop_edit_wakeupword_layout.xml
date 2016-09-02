@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/session_page_background"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <EditText
+        android:id="@+id/et_change_location"
+        style="@style/text_session_item_f3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/location_change_default_hint"
+        android:maxLines="3" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/session_button_hight"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5" >
+
+            <Button
+                android:id="@+id/btn_change_location_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/selector_btn_session"
+                style="@style/text_session_item_f3"
+                android:gravity="center"
+                android:text="@string/ok" />
+
+            <LinearLayout
+                android:id="@+id/ll_editWakeUp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:background="@drawable/session_button_normal"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                 >
+
+                 <ProgressBar
+                    android:id="@+id/pb_waiting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    />
+                    
+                <TextView
+                    style="@style/text_session_item_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/loading_wakeup_text" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_change_location_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            style="@style/text_session_item_f3"
+            android:background="@drawable/selector_btn_session"
+            android:gravity="center"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_session_item_f3_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/edit_wakeupword_tip_1" />
+
+    <TextView
+        style="@style/text_session_item_f3_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_wakeupword_tip_2" />
+
+    <TextView
+        style="@style/text_session_item_f3_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_wakeupword_tip_3" />
+
+</LinearLayout>

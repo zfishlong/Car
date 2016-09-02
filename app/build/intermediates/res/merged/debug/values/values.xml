@@ -1,0 +1,1617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="days_of_week">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="flight_tips">
+        <item>您可以说：查询明天深圳到上海的机票</item>
+        <item>您可以说：明天、后天、2015年10月31日等，来确定日期</item>
+        <item>您可以说：深圳、上海、北京等城市名字，来确定出发地</item>
+        <item>您可以说：深圳、上海、北京等城市名字，来确定目的地</item>
+        <item>您可以说：重新开始，来进行新一轮机票查询</item>
+        <item>您可以说：查返程票，来进行返程机票查询</item>
+        <item>您可以说：退出，来退出机票对话流程</item>
+        <item>查询到机票后，您可以说：前一天、后一天，来调整日期</item>
+        <item>您可以说：2015年10月31日，从深圳到上海的机票</item>
+    </string-array>
+    <string-array name="function_example_app">
+        <item>应用管理</item>
+        <item>打开设置</item>
+    </string-array>
+    <string-array name="function_example_broadcast">
+        <item>调频到99.5兆赫</item>
+    </string-array>
+    <string-array name="function_example_broadcast_offline">
+        <item>打开收音机</item>
+    </string-array>
+    <string-array name="function_example_call">
+        <item>打电话给%1$s</item>
+        <item>打电话</item>
+        <item>打电话给10086</item>
+        <item>拨打工商银行的电话</item>
+    </string-array>
+    <string-array name="function_example_call_no_contact">
+        <item>打电话</item>
+    </string-array>
+    <string-array name="function_example_call_offline">
+        <item>打电话</item>
+        <item>打电话给%1$s</item>
+    </string-array>
+    <string-array name="function_example_contact">
+        <item>联系人</item>
+        <item>姚明的电话是多少</item>
+        <item>查看联系人姚明</item>
+        <item>把姚明的电话发给李四</item>
+    </string-array>
+    <string-array name="function_example_cookbook">
+        <item>烹饪菜谱</item>
+        <item>水煮牛肉</item>
+        <item>肉末茄子怎么做</item>
+        <item>糖醋排骨的做法</item>
+    </string-array>
+    <string-array name="function_example_flight">
+        <item>查询航班</item>
+        <item>查询北京到上海的航班</item>
+        <item>帮我查一下北京到上海的飞机票</item>
+        <item>帮我找找北京到上海的机票</item>
+    </string-array>
+    <string-array name="function_example_memo">
+        <item>设置提醒</item>
+        <item>提醒我明天早上八点出门</item>
+        <item>明天早上九点提醒我开会</item>
+    </string-array>
+    <string-array name="function_example_movie">
+        <item>电影资讯</item>
+        <item>最近有什么好看的电影</item>
+        <item>有什么即将上映的电影</item>
+        <item>今天有什么电影</item>
+    </string-array>
+    <string-array name="function_example_music">
+        <item>来一首小苹果</item>
+        <item>播放邓紫棋的泡沫</item>
+        <item>播放音乐</item>
+        <item>下一首</item>
+    </string-array>
+    <string-array name="function_example_music_offline">
+        <item>播放音乐</item>
+        <item>下一首</item>
+    </string-array>
+    <string-array name="function_example_nearby">
+        <item>周边商户</item>
+        <item>上海火车站附近有没有肯德基</item>
+        <item>附近有什么酒店吗</item>
+        <item>查找附近的美食</item>
+        <item>徐家汇附近有没有KTV</item>
+        <item>陆家嘴附近有没有什么好吃的</item>
+    </string-array>
+    <string-array name="function_example_news">
+        <item>新闻搜索</item>
+        <item>今天有什么新闻</item>
+        <item>娱乐新闻</item>
+        <item>我想看看新闻</item>
+    </string-array>
+    <string-array name="function_example_novel">
+        <item>小说搜索</item>
+        <item>最新的小说</item>
+        <item>励志方面的小说</item>
+        <item>帮我找一下斗破苍穹这本小说</item>
+    </string-array>
+    <string-array name="function_example_route">
+        <item>导航到东方明珠</item>
+        <item>怎么去钦州北路1198号</item>
+        <item>搜索去徐家汇智汇大厦的路线</item>
+    </string-array>
+    <string-array name="function_example_route_offline"/>
+    <string-array name="function_example_search">
+        <item>搜索引擎</item>
+        <item>百度一下云知声</item>
+        <item>搜索一下云知声</item>
+        <item>百度搜索中国好声音</item>
+        <item>百度搜索刘德华的照片</item>
+        <item>搜索云知声</item>
+    </string-array>
+    <string-array name="function_example_setting">
+        <item>打开蓝牙</item>
+    </string-array>
+    <string-array name="function_example_setting_offline">
+        <item>打开蓝牙</item>
+    </string-array>
+    <string-array name="function_example_sitemap">
+        <item>网站导航</item>
+        <item>打开土豆网</item>
+        <item>打开百度</item>
+        <item>打开新浪网</item>
+    </string-array>
+    <string-array name="function_example_sms">
+        <item>发短信给%1$s</item>
+    </string-array>
+    <string-array name="function_example_sms_no_contact">
+        <item>发短信</item>
+    </string-array>
+    <string-array name="function_example_stock">
+        <item>中国石化的股票</item>
+    </string-array>
+    <string-array name="function_example_talk">
+        <item>聊天</item>
+        <item>今天是多少号</item>
+        <item>十万加一百万等于多少</item>
+        <item>讲个笑话吧</item>
+    </string-array>
+    <string-array name="function_example_train">
+        <item>查火车票</item>
+        <item>查询北京到上海的火车票</item>
+        <item>帮我查一下北京到上海的高铁票</item>
+        <item>帮我找找北京到上海的动车</item>
+    </string-array>
+    <string-array name="function_example_translation">
+        <item>翻译</item>
+        <item>“英文翻译早上好”</item>
+        <item>“酸奶翻译成英文”</item>
+        <item>“这个多少钱翻译成英语”</item>
+    </string-array>
+    <string-array name="function_example_tv">
+        <item>电视节目</item>
+        <item>中央一套的节目预告</item>
+        <item>中央一套放什么节目</item>
+        <item>查询中央一套的节目单</item>
+    </string-array>
+    <string-array name="function_example_video">
+        <item>视频搜索</item>
+        <item>我想看视频</item>
+        <item>娱乐视频</item>
+        <item>帮我找找街舞的视频</item>
+    </string-array>
+    <string-array name="function_example_weather">
+        <item>上海的天气</item>
+    </string-array>
+    <string-array name="function_example_wechat">
+        <item>发微信</item>
+        <item>发微信给云知声小芸</item>
+    </string-array>
+    <string-array name="function_example_wechat_offline">
+    </string-array>
+    <string-array name="function_example_yellowpage">
+        <item>常用号码</item>
+        <item>拨打中国移动的客服电话</item>
+        <item>打电话给10086</item>
+        <item>接通招商银行的客服电话</item>
+    </string-array>
+    <string-array name="help_child_content_1">
+        <item>打电话给姚明（离线）</item>
+        <item>拨打姚明的电话（离线）</item>
+        <item>打电话给10086</item>
+        <item>拨打工商银行的电话</item>
+        <item>发短信给姚明</item>
+        <item>发短消息</item>
+    </string-array>
+    <string-array name="help_child_content_2">
+        <item>播放音乐（离线）</item>
+        <item>听陈奕迅的歌（本地）</item>
+        <item>播放邓紫棋的泡沫</item>
+        <item>搜索周杰伦的新歌</item>
+    </string-array>
+    <string-array name="help_child_content_3">
+        <item>调频到99.5（离线）</item>
+        <item>收听87.5兆赫（离线）</item>
+    </string-array>
+    <string-array name="help_child_content_4">
+        <item>导航到东方明珠</item>
+        <item>怎么去钦州北路1198号</item>
+        <item>搜索去徐家汇智汇大厦的路线</item>
+    </string-array>
+    <string-array name="help_child_content_5">
+        <item>打开蓝牙（离线）</item>
+        <item>增大音量（离线）</item>
+        <item>关闭wifi（离线）</item>
+    </string-array>
+    <string-array name="help_child_content_6">
+        <item>上海的天气</item>
+        <item>上海明天会下雨吗</item>
+    </string-array>
+    <string-array name="help_child_content_7">
+        <item>工商银行的股票</item>
+        <item>股票行情</item>
+    </string-array>
+    <string-array name="help_child_content_incall_offline">
+        <item>“接听”</item>
+        <item>“挂断”</item>
+    </string-array>
+    <string-array name="help_child_content_limit_online">
+        <item>“今天的限行尾号”</item>
+        <item>“明天限行吗”</item>
+        <item>“杭州明天的限行号码”</item>
+    </string-array>
+    <string-array name="help_child_content_local_search_online">
+        <item>“附近的餐馆”</item>
+        <item>“最近的加油站”</item>
+        <item>“哪里有超市”</item>
+    </string-array>
+    <string-array name="help_child_content_music_offline">
+        <item>“播放音乐”</item>
+        <item>“上一首”</item>
+        <item>“下一首”</item>
+    </string-array>
+    <string-array name="help_child_content_music_online">
+        <item>“来一首小苹果”</item>
+        <item>“播放邓紫棋的泡沫”</item>
+    </string-array>
+    <string-array name="help_child_content_navigation_offline"/>
+    <string-array name="help_child_content_navigation_online">
+        <item>“导航到东方明珠”</item>
+        <item>“怎么去钦州北路1198号”</item>
+        <item>“搜索去徐家汇智汇大厦的路线”</item>
+    </string-array>
+    <string-array name="help_child_content_net_radio_offline">
+        <item>“暂停”</item>
+        <item>“继续播放”</item>
+    </string-array>
+    <string-array name="help_child_content_net_radio_online">
+        <item>“我想听郭德纲的相声”</item>
+        <item>“我想听单田芳的评书”</item>
+        <item>“上一首”</item>
+        <item>“下一首”</item>
+    </string-array>
+    <string-array name="help_child_content_outcall_offline">
+        <item>“打电话”</item>
+        <item>“打电话给张三”</item>
+    </string-array>
+    <string-array name="help_child_content_outcall_online">
+        <item>“打电话给10086”</item>
+        <item>“拨打工商银行的电话”</item>
+    </string-array>
+    <string-array name="help_child_content_radio_offline">
+        <item>“打开收音机”</item>
+        <item>“上一频道”</item>
+        <item>“下一频道”</item>
+    </string-array>
+    <string-array name="help_child_content_radio_online">
+        <item>“调频到99.5”</item>
+        <item>“收听87.5兆赫”</item>
+        <item>“调幅465千赫”</item>
+    </string-array>
+    <string-array name="help_child_content_setting_offline">
+        <item>“打开蓝牙”</item>
+        <item>“增大音量”</item>
+        <item>“关闭wifi”</item>
+        <item>“打开设置”</item>
+    </string-array>
+    <string-array name="help_child_content_sms_online">
+        <item>“发短信给张三”</item>
+        <item>“发短信给张三内容是:我正在开车”</item>
+    </string-array>
+    <string-array name="help_child_content_stock_online">
+        <item>“工商银行的股票”</item>
+        <item>“股票行情”</item>
+    </string-array>
+    <string-array name="help_child_content_traffic_online">
+        <item>“内环堵不堵”</item>
+        <item>“前方路况怎么样”</item>
+        <item>“深南大道的路况信息”</item>
+    </string-array>
+    <string-array name="help_child_content_weather_online">
+        <item>“上海的天气”</item>
+        <item>“明天北京的天气”</item>
+    </string-array>
+    <string-array name="help_child_content_wechat_online">
+        <item>“发微信”</item>
+        <item>“发微信给云知声小芸”</item>
+        <item>“发微信给云知声讨论组”</item>
+        <item>“发微信给小芸内容是我正在开车”</item>
+    </string-array>
+    <string-array name="help_group_name">
+        <item>蓝牙通讯</item>
+        <item>音乐播放</item>
+        <item>收音机</item>
+        <item>地图导航</item>
+        <item>常用控制</item>
+        <item>天气预报</item>
+        <item>股票资讯</item>
+        <item>周边搜索</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_app">
+        <item>想打开相机可以说“打开相机”！</item>
+        <item>你可以说“打开微信”来打开手机里安装的微信应用！</item>
+        <item>失败了吗？你还可以说“打开应用”！</item>
+        <item>失败了吗？你还可以说“打开程序”！</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_call">
+        <item>失败了吗？你可以说“打电话给某某某”来给ta打电话的！</item>
+        <item>失败了吗？你可以尝试说“给某某某打电话”来给ta打电话的！</item>
+        <item>失败了吗？你还可以说“打某某某的电话”来给ta打电话的！</item>
+        <item>你可以说“打电话给某某某”来给ta打电话的！</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_memo">
+        <item>你可以说“提醒”来设置提醒！</item>
+        <item>你可以说“提醒我”来设置提醒！</item>
+        <item>你可以说“提醒一下”来设置提醒！</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_search">
+        <item>你可以说“搜索刘翔”来搜索关键字“刘翔”！</item>
+        <item>失败了吗？你也可以说“百度搜索中国好声音”</item>
+        <item>失败了吗？你还可以说“谷歌上海”，使用谷歌搜索“上海”！</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_sms">
+        <item>失败了，你可以说“发短信给某某某”来给ta发短信！</item>
+        <item>你可以说“发短信给某某某”来给ta发短信！</item>
+    </string-array>
+    <string-array name="knowledge_grammer_example_weather">
+        <item>查询天气的话可以说“天气查询”！</item>
+        <item>你可以说“今天天气怎么样”来查询最近本地天气！</item>
+        <item>失败了吗？你还可以说“北京天气怎么样”来查询最近北京的天气！</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_app">
+        <item>打开</item>
+        <item>启动</item>
+        <item>软件</item>
+        <item>程序</item>
+        <item>加载</item>
+        <item>运行</item>
+        <item>卸载</item>
+        <item>删除</item>
+        <item>开启</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_call">
+        <item>电话</item>
+        <item>拨通</item>
+        <item>呼叫</item>
+        <item>手机</item>
+        <item>家里的电话</item>
+        <item>座机</item>
+        <item>小灵通</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_memo">
+        <item>提醒</item>
+        <item>闹钟</item>
+        <item>开会</item>
+        <item>叫醒</item>
+        <item>记一下</item>
+        <item>备忘</item>
+        <item>记下</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_search">
+        <item>搜索</item>
+        <item>收缩</item>
+        <item>收索</item>
+        <item>百度</item>
+        <item>谷歌</item>
+        <item>搜狗</item>
+        <item>必应</item>
+        <item>雅虎</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_sms">
+        <item>短信</item>
+        <item>短消息</item>
+        <item>简讯</item>
+        <item>消息</item>
+        <item>告诉</item>
+        <item>信息</item>
+    </string-array>
+    <string-array name="knowledge_grammer_keyword_weather">
+        <item>天气</item>
+        <item>温度</item>
+        <item>气温</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_auto_pick">
+        <item>正在为你选择第%1$s个应用</item>
+        <item>帮你选择了第%1$s个应用</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_not_found">
+        <item>对不起，没有找到应用</item>
+        <item>对不起，应用%1$s不存在</item>
+        <item>不好意思，你手机里没有这个应用</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_open_name">
+        <item>你要打开什么软件</item>
+        <item>请说软件名称</item>
+        <item>请说应用的名称</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_open_name_no_recognise_result_1">
+        <item>对不起，请说应用的名称</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_open_name_no_recognise_result_2">
+        <item>又错了？请尽可能清楚的再说一次，或者说取消来退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_open_name_no_recognise_result_3">
+        <item> 我很抱歉，我不知道该打开什么应用，我将退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_opening">
+        <item>正在为你打开%1$s</item>
+        <item>正在打开%1$s</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_uninstall_name">
+        <item>你要卸载什么软件</item>
+        <item>请说软件名称</item>
+        <item>请说应用的名称</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_uninstall_name_no_recognise_result_1">
+        <item>对不起，请说应用的名称</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_uninstall_name_no_recognise_result_2">
+        <item>又错了？请尽可能清楚的再说一次，或者说取消来退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_uninstall_name_no_recognise_result_3">
+        <item> 我很抱歉，我不知道该卸载什么应用，我将退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_app_uninstalling">
+        <item>正在为你卸载应用%1$s</item>
+        <item>正在卸载%1$s</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name">
+        <item>打给谁？</item>
+        <item>你准备给谁打电话?</item>
+        <item>请说出你要拨打人的姓名</item>
+        <item>你想打电话给谁?</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name_no_input_1">
+        <item>对不起，请在听到提示音之后开始说话</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name_no_input_2">
+        <item>又错了？是不是离麦克风太远了，请离麦克风近一点</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name_no_input_3">
+        <item>我很抱歉，我没有听到你说的话，我将退出电话功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name_no_recognise_result_1">
+        <item>对不起，请说通讯录中存在的联系人姓名</item>
+        <item>对不起，并未找到你说的联系人，请重新说</item>
+        <item>对不起，联系人不存在，请再说一次</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name_no_recognise_result_2">
+        <item>又错了？请务必说通讯录中存在的联系人的姓名，或者说取消来退出电话功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_contact_name_no_recognise_result_3">
+        <item>我很抱歉，我无法找到您想要联系的人，我将退出电话功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_call_dialing">
+        <item>正在为你接通%1$s的电话</item>
+        <item>正在拨打%1$s的电话</item>
+    </string-array>
+    <string-array name="knowledge_stage_contact_auto_pick">
+        <item>正在为你选择第%1$s个联系人</item>
+        <item>帮你选择了第%1$s个联系人</item>
+    </string-array>
+    <string-array name="knowledge_stage_contact_not_found">
+        <item>对不起，没有找到%1$s</item>
+        <item>对不起，不存在联系人%1$s</item>
+        <item>对不起，没有找到这个联系人</item>
+    </string-array>
+    <string-array name="knowledge_stage_help">
+        <item>您好，有什么可以帮您的？</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_created">
+        <item>提醒创建成功</item>
+        <item>已为您创建提醒成功</item>
+        <item>好的，我将在%1$s提醒你</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime">
+        <item>请说提醒时间</item>
+        <item>请告诉我什么时候提醒你</item>
+        <item>请告诉我提醒的具体时间</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime_expired_1">
+        <item>对不起，不能使用过去的时间作为提醒时间，请重新说提醒时间</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime_expired_2">
+        <item>时间已经过去了，没办法再回头，请说一个未来的时间</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime_expired_3">
+        <item>对不起，我实在没办法回到过去去提醒你，我将退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime_no_recognise_result_1">
+        <item>对不起，请说提醒时间，比如明天早上八点</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime_no_recognise_result_2">
+        <item>又错了？请尽可能清楚的再说一次，或者说取消来退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_memo_datetime_no_recognise_result_3">
+        <item>我很抱歉，我不知道该什么时候提醒你，我将退出这个功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_music_not_found">
+        <item>对不起，没有找到%1$s</item>
+        <item>很抱歉，没有找到%1$s这首歌曲，你可以再试一次</item>
+    </string-array>
+    <string-array name="knowledge_stage_network_exception">
+        <item> 对不起，网络不给力</item>
+        <item>对不起，网络不给力，请稍后重试</item>
+    </string-array>
+    <string-array name="knowledge_stage_network_timeout">
+        <item> 对不起，网络不给力，请稍后再试</item>
+    </string-array>
+    <string-array name="knowledge_stage_no_input">
+        <item>不知道说什么吗？试试“打电话给某某”吧</item>
+        <item>不知道说什么吗？试试“发短信给某某”吧</item>
+        <item>可能您说话声音太小，没听清楚，能重复下吗？</item>
+    </string-array>
+    <string-array name="knowledge_stage_no_network">
+        <item> 对不起，无法访问网络，请检查网络连接设置</item>
+    </string-array>
+    <string-array name="knowledge_stage_no_recognise_result">
+        <item>对不起，暂时还不支持这个功能，我会尽快学会的</item>
+        <item>对不起，我无法理解您的话</item>
+        <item>很抱歉，我无法回答您的问题</item>
+        <item>你的这句话我没学过，我会继续努力学习的</item>
+        <item>对不起，我听不懂这个命令哦！</item>
+    </string-array>
+    <string-array name="knowledge_stage_number_auto_pick">
+        <item>正在为你选择第%1$s个号码</item>
+        <item>帮你选择了第%1$s个号码</item>
+    </string-array>
+    <string-array name="knowledge_stage_number_not_found">
+        <item> 对不起，该联系人没有保存电话号码</item>
+        <item>对不起，%1$s还没有保存号码</item>
+        <item>对不起，找不到%1$s的可用号码</item>
+    </string-array>
+    <string-array name="knowledge_stage_search_keyword">
+        <item>请问你要搜索什么</item>
+        <item>请说你要搜索的关键字</item>
+        <item>请说你要查询什么</item>
+    </string-array>
+    <string-array name="knowledge_stage_sms_contact_name">
+        <item>请说联系人姓名</item>
+        <item>你想给谁发信息</item>
+        <item>请说出你要发短信的人的姓名</item>
+    </string-array>
+    <string-array name="knowledge_stage_sms_contact_name_no_recognise_result_1">
+        <item>对不起，请说通讯录中存在的联系人姓名</item>
+        <item>对不起，并未找到你说的联系人，请重新说</item>
+        <item>对不起，联系人不存在，请再说一次</item>
+    </string-array>
+    <string-array name="knowledge_stage_sms_contact_name_no_recognise_result_2">
+        <item>又错了？请务必说通讯录中存在的联系人的姓名，或者说取消来退出短信功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_sms_contact_name_no_recognise_result_3">
+        <item>我很抱歉，我无法找到您想要联系的人，我将退出短信功能</item>
+    </string-array>
+    <string-array name="knowledge_stage_sms_content">
+        <item>请说短信内容</item>
+        <item>请告诉我短信内容</item>
+    </string-array>
+    <string-array name="knowledge_stage_sms_content_continue">
+        <item>请继续说短信内容或者说发送</item>
+        <item>你可以继续说短信内容或者说发送</item>
+    </string-array>
+    <string-array name="knowledge_stage_weather_city_not_found">
+        <item>对不起，没有找到城市：%1$s</item>
+        <item>对不起，暂时不支持这个城市</item>
+    </string-array>
+    <string-array name="knowledge_stage_weather_fetching">
+        <item> 正在获取天气数据，请稍等</item>
+        <item>读取天气数据中，请稍后</item>
+    </string-array>
+    <string-array name="knowledge_stage_weather_locate_failed">
+        <item>对不起，获取当前位置失败，无法提供天气服务</item>
+        <item>对不起，无法得知你当前所在的城市，无法提供天气服务</item>
+    </string-array>
+    <string-array name="knowledge_stage_web_not_found">
+        <item>对不起，没有找到该网页</item>
+    </string-array>
+    <string-array name="map_selection">
+        <item>@string/amap</item>
+        <item>@string/baidu</item>
+    </string-array>
+    <string-array name="memo_indicator">
+        <item>@string/to_do</item>
+        <item>@string/completed</item>
+    </string-array>
+    <string-array name="tts_speed_selection">
+        <item>低速</item>
+        <item>正常</item>
+        <item>快速</item>
+    </string-array>
+    <string-array name="wakeup_success_prompt">
+        <item>魔方在</item>
+        <item>请说指令</item>
+        <item>我在呢</item>
+        <item>要我干啥</item>
+    </string-array>
+    <bool name="default_title_indicator_selected_bold">true</bool>
+    <color name="black">#000000</color>
+    <color name="blue">#0099CC</color>
+    <color name="brown">#3D3D3D</color>
+    <color name="color_asr_result_text">#f3c28d</color>
+    <color name="color_location_keyword_text">#7291b7</color>
+    <color name="color_main_auto_help_text">#B3B3B3</color>
+    <color name="color_session_item_number">#f3c28d</color>
+    <color name="color_text_assist_1">#59544f</color>
+    <color name="color_text_assist_2">#808080</color>
+    <color name="color_text_chat_cloud">#FFFFFF</color>
+    <color name="color_text_chat_user">#f3c28d</color>
+    <color name="color_text_link">#c5a654</color>
+    <color name="color_text_tips">#FFFFFFFF</color>
+    <color name="color_traffic_control_number">#ff4444</color>
+    <color name="color_wakeup_word">#f3c28d</color>
+    <color name="color_webview_loading_background">#f5f3ef</color>
+    <color name="color_webview_loading_text">#808080</color>
+    <color name="color_webview_progressbar_background">#e0000000</color>
+    <color name="color_webview_progressbar_progress">#f3c28d</color>
+    <color name="dark_blue">#003567</color>
+    <color name="default_title_indicator_footer_color">#FF33B5E5</color>
+    <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
+    <color name="default_title_indicator_text_color">#BBFFFFFF</color>
+    <color name="function_item">#3a3d42</color>
+    <color name="function_item_pressed">#272b2e</color>
+    <color name="gren">#669900</color>
+    <color name="grey">#777777</color>
+    <color name="grey_white">#F6F6F6</color>
+    <color name="item_pressed">#333f50</color>
+    <color name="light_grey">#CCCCCC</color>
+    <color name="main_page_background">#FF2c2e33</color>
+    <color name="menu_divider">#404040</color>
+    <color name="menu_item_pressed">#2B2B2B</color>
+    <color name="microphone_bg">#111824</color>
+    <color name="music_item_bg_normal">#666666</color>
+    <color name="music_item_bg_pressed">#4D33B5E5</color>
+    <color name="page_memo_management_bg">#F2F2F2</color>
+    <color name="page_memo_management_header">#E6E6E6</color>
+    <color name="prompt_bg">#111824</color>
+    <color name="red">#CC0000</color>
+    <color name="session_container_bg">#051329</color>
+    <color name="session_page_background">#E6100d13</color>
+    <color name="sms_line">#D9D9D9</color>
+    <color name="sms_title">#a0000000</color>
+    <color name="space_grey">#9B9B9B</color>
+    <color name="state_focused">#00BAFF</color>
+    <color name="state_pressed">#7BC7E1</color>
+    <color name="state_selected">#33B5E5</color>
+    <color name="text_color_widget">#81909c</color>
+    <color name="text_custom_dialog_title">#004986</color>
+    <color name="text_focus">#0099CC</color>
+    <color name="text_memo_management_header">#666666</color>
+    <color name="text_stock_name">#003567</color>
+    <color name="title_bg">#97C3D2</color>
+    <color name="weather_background">#2d3c4f</color>
+    <color name="weather_focus_day">#c5a654</color>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="CalendarView"><attr format="integer" name="firstDayOfWeek"/><attr format="string" name="minDate"/><attr format="string" name="maxDate"/><attr format="color|reference" name="selectedDateBackground"/><attr format="color|reference" name="weekDayTextColor"/><attr format="color|reference" name="weekDayBackground"/><attr format="dimension" name="weekDayTextSize"/><attr format="dimension" name="weekDayHeight"/><attr format="reference" name="dateTextAppearance"/></declare-styleable>
+    <declare-styleable name="CalendarViewCell"><attr format="dimension" name="lineStrokeWidth"/><attr format="color|reference" name="lineColor"/><attr format="dimension" name="dayTextSize"/><attr format="color|reference" name="dayTextColor"/><attr format="color|reference" name="weekendDayTextColor"/><attr format="color|reference" name="todayBackgroundColor"/></declare-styleable>
+    <declare-styleable name="GlideImageView"><attr format="float" name="ratio"/></declare-styleable>
+    <declare-styleable name="LinedEditText"><attr format="dimension" name="line_stoke_width"/><attr format="dimension" name="line_dash_on_width"/><attr format="dimension" name="line_dash_off_width"/><attr format="color" name="line_color"/><attr name="lines_according"><enum name="line_count" value="1"/><enum name="view_height" value="2"/></attr></declare-styleable>
+    <declare-styleable name="MicrophoneControl"><attr format="dimension" name="circle_radius"/><attr format="color" name="circle_color"/></declare-styleable>
+    <declare-styleable name="MyView"><attr format="color" name="textColor"/><attr format="dimension" name="textSize"/><attr format="dimension" name="textWordMargin"/><attr format="dimension" name="textLineMargin"/><attr format="integer" name="textBackground"/><attr format="dimension" name="textPaddingLeft"/><attr format="dimension" name="textPaddingRight"/><attr format="dimension" name="textPaddingTop"/><attr format="dimension" name="textPaddingBottom"/></declare-styleable>
+    <declare-styleable name="SlidingMenu"><attr name="mode"><enum name="left" value="0"/><enum name="right" value="1"/></attr><attr format="reference" name="viewAbove"/><attr format="reference" name="viewBehind"/><attr format="dimension" name="behindOffset"/><attr format="dimension" name="behindWidth"/><attr format="float" name="behindScrollScale"/><attr name="touchModeAbove"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/></attr><attr name="touchModeBehind"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/></attr><attr format="reference" name="shadowDrawable"/><attr format="dimension" name="shadowWidth"/><attr format="boolean" name="fadeEnabled"/><attr format="float" name="fadeDegree"/><attr format="boolean" name="selectorEnabled"/><attr format="reference" name="selectorDrawable"/></declare-styleable>
+    <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle"><enum name="none" value="0"/><enum name="triangle" value="1"/><enum name="underline" value="2"/></attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition"><enum name="bottom" value="0"/><enum name="top" value="1"/></attr><attr format="color|reference" name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
+    <dimen name="bigger_text_size">26sp</dimen>
+    <dimen name="biggest_text_size">30sp</dimen>
+    <dimen name="bottom_bar_height">50dp</dimen>
+    <dimen name="bottom_indicator_height">32dp</dimen>
+    <dimen name="call_content_view_margin_bottom">0dp</dimen>
+    <dimen name="call_content_view_margin_left">0dp</dimen>
+    <dimen name="call_content_view_margin_right">0dp</dimen>
+    <dimen name="call_content_view_margin_top">0dp</dimen>
+    <dimen name="container_height">190dp</dimen>
+    <dimen name="default_title_indicator_clip_padding">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20dp</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2dp</dimen>
+    <dimen name="default_title_indicator_footer_padding">7dp</dimen>
+    <dimen name="default_title_indicator_text_size">15dp</dimen>
+    <dimen name="default_title_indicator_title_padding">5dp</dimen>
+    <dimen name="default_title_indicator_top_padding">7dp</dimen>
+    <dimen name="float_window_def">5dp</dimen>
+    <dimen name="function_padding_bottom">5dp</dimen>
+    <dimen name="function_padding_left">6.5dp</dimen>
+    <dimen name="function_padding_right">6.5dp</dimen>
+    <dimen name="function_padding_top">2.5dp</dimen>
+    <dimen name="height_main_menu">55dp</dimen>
+    <dimen name="height_setting_status_text">32dp</dimen>
+    <dimen name="help_content_item_hight">36dp</dimen>
+    <dimen name="help_content_margin_left">160dp</dimen>
+    <dimen name="help_example_textsize">25sp</dimen>
+    <dimen name="help_menu_margin">30dp</dimen>
+    <dimen name="help_menu_text_padding">10dp</dimen>
+    <dimen name="help_menu_text_size">30sp</dimen>
+    <dimen name="help_note_text_size">23sp</dimen>
+    <dimen name="help_submenu_text_padding">5dp</dimen>
+    <dimen name="help_submenu_text_size">25sp</dimen>
+    <dimen name="homepage_text_margin_icon">24dp</dimen>
+    <dimen name="homepage_text_margin_text">8dp</dimen>
+    <dimen name="homepage_title_text_margin_left">16dp</dimen>
+    <dimen name="homepage_title_text_margin_top">16dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="main_mic_pic_size">80dp</dimen>
+    <dimen name="main_page_banner_height">65dp</dimen>
+    <dimen name="main_top_help_text_paddingTop">8dp</dimen>
+    <dimen name="mainview_setting_icon">55dp</dimen>
+    <dimen name="menu_width">60dp</dimen>
+    <dimen name="mic_control_height">95dp</dimen>
+    <dimen name="mic_float_pic_size">50dp</dimen>
+    <dimen name="mic_height">68dp</dimen>
+    <dimen name="mic_icon">60dp</dimen>
+    <dimen name="mic_text_answer_margin">110dp</dimen>
+    <dimen name="mic_title_textsize">25sp</dimen>
+    <dimen name="normal_text_size">24sp</dimen>
+    <dimen name="pic_text_distance">60dp</dimen>
+    <dimen name="pick_app_content_view_header_height">13dp</dimen>
+    <dimen name="pick_app_padding_bottom">8dp</dimen>
+    <dimen name="pick_app_padding_left">6dp</dimen>
+    <dimen name="pick_app_padding_right">6dp</dimen>
+    <dimen name="pick_app_padding_top">6dp</dimen>
+    <dimen name="pick_music_padding_bottom">8dp</dimen>
+    <dimen name="pick_music_padding_left">6dp</dimen>
+    <dimen name="pick_music_padding_right">7dp</dimen>
+    <dimen name="pick_music_padding_top">5dp</dimen>
+    <dimen name="pick_persion_padding_bottom">8dp</dimen>
+    <dimen name="pick_persion_padding_left">6dp</dimen>
+    <dimen name="pick_persion_padding_right">16.7dp</dimen>
+    <dimen name="pick_persion_padding_top">20dp</dimen>
+    <dimen name="pick_phone_number_padding_bottom">6dp</dimen>
+    <dimen name="pick_phone_number_padding_left">6dp</dimen>
+    <dimen name="pick_phone_number_padding_right">6dp</dimen>
+    <dimen name="pick_phone_number_padding_top">6dp</dimen>
+    <dimen name="pick_view_cancel_button_height">40dp</dimen>
+    <dimen name="pick_view_cancel_button_textsize">12sp</dimen>
+    <dimen name="poi_list_divier_margin">5dp</dimen>
+    <dimen name="poi_sort_list_divider_height">0.9dp</dimen>
+    <dimen name="poi_sort_list_item_width">120dp</dimen>
+    <dimen name="prepare_windows_height">150dp</dimen>
+    <dimen name="prepare_windows_width">320dp</dimen>
+    <dimen name="push_view_height">80dp</dimen>
+    <dimen name="second_page_banner_height">66dp</dimen>
+    <dimen name="session_button_hight">69dp</dimen>
+    <dimen name="session_contain_height">206dp</dimen>
+    <dimen name="session_content_margin_bottom">16dp</dimen>
+    <dimen name="session_content_margin_top">16dp</dimen>
+    <dimen name="session_content_padding_head_title">8dp</dimen>
+    <dimen name="session_item_hight">64dp</dimen>
+    <dimen name="session_item_info_hight">50dp</dimen>
+    <dimen name="session_item_info_margin_left">16dp</dimen>
+    <dimen name="session_padding_bottom">9dp</dimen>
+    <dimen name="session_padding_left">9dp</dimen>
+    <dimen name="session_padding_right">9dp</dimen>
+    <dimen name="session_padding_top">9dp</dimen>
+    <dimen name="session_text_padding_bottom">15dp</dimen>
+    <dimen name="session_text_padding_left">30dp</dimen>
+    <dimen name="session_text_padding_right">25dp</dimen>
+    <dimen name="session_text_padding_top">15dp</dimen>
+    <dimen name="setting_page1_status_image_margin_top">16dp</dimen>
+    <dimen name="setting_page1_status_text_margin_top">4dp</dimen>
+    <dimen name="setting_page1_title_margin_top">12dp</dimen>
+    <dimen name="setting_sideline">10dp</dimen>
+    <dimen name="shadow_width">5dp</dimen>
+    <dimen name="slidingmenu_offset">90dp</dimen>
+    <dimen name="smaller_text_size">18sp</dimen>
+    <dimen name="smallest_text_size">13sp</dimen>
+    <dimen name="sms_word_size">15dp</dimen>
+    <dimen name="stock_bigger_text_size">36sp</dimen>
+    <dimen name="stock_biggest_text_size">48sp</dimen>
+    <dimen name="stock_normal_text_size">18sp</dimen>
+    <dimen name="stock_smaller_text_size">14sp</dimen>
+    <dimen name="text_size_f1">36dp</dimen>
+    <dimen name="text_size_f2">24dp</dimen>
+    <dimen name="text_size_f3">20dp</dimen>
+    <dimen name="text_size_f4">16dp</dimen>
+    <dimen name="text_size_f5">12dp</dimen>
+    <dimen name="text_size_f6">9dp</dimen>
+    <dimen name="title_bar_paddingTop">0dp</dimen>
+    <dimen name="title_height">55dp</dimen>
+    <dimen name="title_setting_margin">4dp</dimen>
+    <dimen name="voice_level_view_margin_top">218dp</dimen>
+    <dimen name="weather_image_margin_bottom1">20dp</dimen>
+    <dimen name="weather_image_margin_top1">20dp</dimen>
+    <dimen name="weather_padding_top1">20dp</dimen>
+    <dimen name="weather_smaller_text_size">18sp</dimen>
+    <dimen name="weather_text_f1">24sp</dimen>
+    <dimen name="weather_text_f2">18sp</dimen>
+    <dimen name="weather_text_f3">15sp</dimen>
+    <dimen name="weather_text_f4">12sp</dimen>
+    <dimen name="weather_text_f5">9sp</dimen>
+    <dimen name="weather_text_f6">7sp</dimen>
+    <dimen name="weather_text_size">14sp</dimen>
+    <dimen name="wheel_view_item_text_size">16sp</dimen>
+    <dimen name="width_main_menu">180dp</dimen>
+    <dimen name="width_mic_control_button">163dp</dimen>
+    <dimen name="width_mic_control_view">213dp</dimen>
+    <dimen name="window_height">270dp</dimen>
+    <dimen name="window_width">430dp</dimen>
+    <item name="textViewIndex" type="id">false</item>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <integer name="num_cols">1</integer>
+    <integer name="show_text_number">11</integer>
+    <string name="PreferenceAutoOpenMic">启动语音助手后将自动开始录音</string>
+    <string name="PreferenceClickOpenMic">启动语音助手后需要点击按钮开始录音</string>
+    <string name="PreferenceSettingAutoOpenMic">启动后自动开始录音</string>
+    <string name="about_author">作者: 北京云知声信息技术有限公司</string>
+    <string name="about_content_line2">打电话时搜索联系人很麻烦？用键盘发短信太繁琐？ \n云知声语音助手来帮助你解决这些问题。\n</string>
+    <string name="about_content_line3">【产品特点】\n
+	    1、打电话、发短信，简单方便  \n
+	    2、天气查询、打开应用、搜索内容 \n
+	    3、完美普通话支持，语音无处不在 \n
+	    4、更多功能正在火速搭建中 \n
+	</string>
+    <string name="about_content_line4">【产品反馈】\n
+	    欢迎大家@云知声，反馈您宝贵的意见 \n
+	    我们会做得更好！ \n
+	    \n
+	    新浪微博：http://e.weibo.com/bjyzs \n
+	    官方邮箱：ishuoshuo@yunzhisheng.cn \n
+	    商务邮箱：support@yunzhisheng.cn \n
+	    官方QQ：1172977637 \n
+	    官方QQ群：145167715 \n
+	</string>
+    <string name="about_content_line5">【免责申明】\n
+	    1、云知声语音助手的内容来自于互联网及用户自主分享，所有内容并不反映云知声任何意见及观点 \n
+	    2、如果云知声语音助手的内容有侵犯到您的权益，请立即与我们联系，我们将在第一时间对内容进行处理 \n
+	</string>
+    <string name="about_copyright_line1">Copyright© 2012 Unisound Information Technology Co., Ltd.</string>
+    <string name="about_copyright_line2">All rights reserved.</string>
+    <string name="about_version">版本: %1$s</string>
+    <string name="address">地址：</string>
+    <string name="amap">高德地图</string>
+    <string name="amap_error_key">key验证无效！</string>
+    <string name="amap_error_network">搜索失败,请检查网络连接！</string>
+    <string name="amap_error_other">未知错误，请稍后重试!错误码为</string>
+    <string name="amap_no_result">对不起，没有搜索到相关数据！</string>
+    <string name="amap_with_bracket">(高德地图)</string>
+    <string name="answer">接听</string>
+    <string name="answer_call">接听电话</string>
+    <string name="app">App</string>
+    <string name="app_name"> UniDrive</string>
+    <string name="app_version">V 1.0.0.8</string>
+    <string name="appmgr_find_no_app">没有找到相关应用</string>
+    <string name="artist">Artist</string>
+    <string name="audio_no_next">已经是最后一首了</string>
+    <string name="audio_no_previous">已经是第一首了</string>
+    <string name="baidu">百度地图</string>
+    <string name="baidu_text">TextView</string>
+    <string name="baidu_with_bracket">(百度地图)</string>
+    <string name="baidumap_or_navigation">百度地图或导航</string>
+    <string name="beta_verion">beta 1.0.1</string>
+    <string name="bluetooth">蓝牙通讯</string>
+    <string name="bluetooth_conn">蓝牙通讯</string>
+    <string name="broadcast">收音机</string>
+    <string name="broadcast_query_result">为您找到如下电台信息：</string>
+    <string name="broadcast_query_result_empty">马上为你打开收音机</string>
+    <string name="brodcast_data_is_no_amap">您说的频段我还不支持！</string>
+    <string name="btn_next">下一页</string>
+    <string name="btn_pre">上一页</string>
+    <string name="bus_route_city_unequal">起止城市不相同，无法为您查询公交路线。</string>
+    <string name="button_text_i_know">我知道了</string>
+    <string name="call_cancel">取消</string>
+    <string name="call_canceled">电话已挂断</string>
+    <string name="call_confirm_ansewer_text">请说确定或说取消</string>
+    <string name="call_find_contact_no_number">没有找到该联系人的号码</string>
+    <string name="call_find_no_person">没有找到相关联系人</string>
+    <string name="call_incoming_title_contact">%1$s\t来电</string>
+    <string name="call_ok">立即拨打</string>
+    <string name="call_out">确定</string>
+    <string name="call_out_input_contact_title">打电话给谁？</string>
+    <string name="call_out_name">呼叫%1$s :</string>
+    <string name="call_out_title_muti_contacts">找到%1$d个联系人 :</string>
+    <string name="call_out_title_name_muti_number">找到\t%1$s\t的%2$d个号码 :</string>
+    <string name="call_phone_confirm">拨打<ns1:g>%1$s</ns1:g>确定还是取消</string>
+    <string name="call_phone_confirm_number">拨打<ns1:g>%1$s</ns1:g>的<ns1:g>%2$s</ns1:g>确定还是取消</string>
+    <string name="call_phone_delay">吾秒后为您接通<ns1:g>%1$s</ns1:g>电话</string>
+    <string name="call_receive">接听</string>
+    <string name="call_reject">挂断</string>
+    <string name="cancal">取消</string>
+    <string name="cancel">取消</string>
+    <string name="cancel_random_play">已取消随机播放</string>
+    <string name="cancel_text_doreso">我不想哼歌了</string>
+    <string name="change_broadcast_format">调到%1$S</string>
+    <string name="channel">Channel</string>
+    <string name="chat_webview_loading">马上就好，让你调戏...</string>
+    <string name="china_mobile">中国移动</string>
+    <string name="china_telecom">中国电信</string>
+    <string name="china_unicom">中国联通</string>
+    <string name="city">市</string>
+    <string name="click_mic">您取消了录音，请点击麦克风重新录音</string>
+    <string name="close">关闭</string>
+    <string name="close_3g">已为你关闭移动网络</string>
+    <string name="close_bluetooth">已关闭蓝牙</string>
+    <string name="close_desk_lyric">已关闭桌面歌词</string>
+    <string name="close_model_mute">已关闭静音模式</string>
+    <string name="close_model_vibra">已关闭振动模式</string>
+    <string name="close_rotation">已关闭自动旋转屏幕</string>
+    <string name="close_wifi">已关闭无线网络</string>
+    <string name="close_wifi_spot">已关闭WIFI热点</string>
+    <string name="common_control">设置</string>
+    <string name="company">北京云知声信息技术有限公司</string>
+    <string name="completed">已完成</string>
+    <string name="concrete">具体</string>
+    <string name="connect_name">正在接通<ns1:g>%1$s</ns1:g>的电话</string>
+    <string name="connect_number">正在接通<ns1:g>%1$s</ns1:g></string>
+    <string name="contact_format">姓名：%1$s\n号码：%2$s</string>
+    <string name="contact_name_default">张三</string>
+    <string name="copyright">北京云知声 版权所有</string>
+    <string name="create_success">创建成功</string>
+    <string name="current_city">当前城市</string>
+    <string name="current_position">当前位置</string>
+    <string name="data_empty">暂无</string>
+    <string name="date_format_show">yyyy年MM月dd日</string>
+    <string name="day_after_tomorrow">后天</string>
+    <string name="day_before_yesterday">前天</string>
+    <string name="decrease_volumne">已减小音量</string>
+    <string name="default_hint_added_address">请输入目的地，如“徐家汇”</string>
+    <string name="default_hint_edit_wakeup_word">请输入昵称</string>
+    <string name="default_name_no_contact_offline">“某某某”</string>
+    <string name="default_name_no_contact_online">10086</string>
+    <string name="delete_memo_prompt">确定删除吗？</string>
+    <string name="delete_sms_cancel">取消</string>
+    <string name="delete_sms_confirm">确认</string>
+    <string name="delete_sms_notice">确认要删除这条短信吗？</string>
+    <string name="delete_sms_notice_title">提示</string>
+    <string name="descriptionForImageView">这是个图像</string>
+    <string name="dianping_provide">大众点评dianping.com</string>
+    <string name="domain_alarm">提醒</string>
+    <string name="domain_app">应用</string>
+    <string name="domain_call">电话</string>
+    <string name="domain_contact">联系人</string>
+    <string name="domain_cookbook">菜谱</string>
+    <string name="domain_flight">机票</string>
+    <string name="domain_local_search">周边查询</string>
+    <string name="domain_movie">电影</string>
+    <string name="domain_music">音乐</string>
+    <string name="domain_nearby_search">搜索</string>
+    <string name="domain_news">新闻</string>
+    <string name="domain_novel">小说</string>
+    <string name="domain_position">线路</string>
+    <string name="domain_setting">手机设置</string>
+    <string name="domain_sitemap">网站导航</string>
+    <string name="domain_sms">短信</string>
+    <string name="domain_stock">股票</string>
+    <string name="domain_train">火车票</string>
+    <string name="domain_translation">翻译</string>
+    <string name="domain_tv">电视预告</string>
+    <string name="domain_video">视频</string>
+    <string name="domain_weather">天气</string>
+    <string name="domain_yellow_page">常用号码</string>
+    <string name="download">下载</string>
+    <string name="downloading">下载中…</string>
+    <string name="edit_datetime">编辑时间</string>
+    <string name="edit_wakeupword_tip_1">1、只支持汉字，不支持英文字母、阿拉伯数字。最好给我取个四个字的昵称，这样我会比较灵敏的。</string>
+    <string name="edit_wakeupword_tip_2">2、昵称对我很重要的，最好别是一样的字，一样的发音，否则我有时候会乱跳出来的。</string>
+    <string name="edit_wakeupword_tip_3">3、要是昵称您觉得不好用，推荐试试“你好魔方”。</string>
+    <string name="empty_time">00:00:00</string>
+    <string name="end_call">挂断电话</string>
+    <string name="end_poi">终点：</string>
+    <string name="error_init_msg_no_sdcard">SD卡未安装!</string>
+    <string name="error_init_msg_vui_service_not_install">服务未安装!</string>
+    <string name="error_init_title_failed">初始化失败</string>
+    <string name="error_msg_due_date">试用版本已到期！可以尝试联系售后方，激活后可正常试用。</string>
+    <string name="error_msg_internal_memory_insufficient">内存空间不足%1$s MB, 无法启动TTS程序，请清理后再试！</string>
+    <string name="error_msg_sdcard_space_insufficient">SD卡空间不足%1$s MB，无法启动语音程序，请清理后再试！</string>
+    <string name="error_msg_sdcard_space_insufficient_switch_tts">内置SD卡空间不足%1$s MB, 语音包无法切换，请清理后再试！</string>
+    <string name="error_msg_search_poi_no_network">无网络，请联网后再试。</string>
+    <string name="error_msg_search_poi_no_result">找不到该目的地，请换一个地址试试。</string>
+    <string name="error_msg_search_poi_timeout">网络好像不给力！</string>
+    <string name="error_msg_write_tts_fail">TTS文件写入出错，请重启设备后再试。</string>
+    <string name="error_no_network_connect">网络连接异常</string>
+    <string name="error_number">惭愧！您说的频率没有找到，可以再换一个吗？</string>
+    <string name="error_title_due_date">试用到期</string>
+    <string name="error_title_internal_memory_insufficient">内存空间不足</string>
+    <string name="error_title_sdcard_space_insufficient">存储空间不足</string>
+    <string name="error_title_write_tts_fail">文件写入失败</string>
+    <string name="error_unknown">请听提示哦！本次操作已取消了。</string>
+    <string name="executed">已执行</string>
+    <string name="exit_music">退出音乐播放吗？</string>
+    <string name="failed">失败</string>
+    <string name="feedback_error_">错误内容已反馈，</string>
+    <string name="fetching_data">获取数据中,请稍后</string>
+    <string name="five_days_later">（五天后）</string>
+    <string name="flight_query_prompt_format">已为您查询到 %1$s%2$s到%3$s的航班</string>
+    <string name="for_find">正在为您查找</string>
+    <string name="forward_sms_answer">转发%1$s的信息</string>
+    <string name="forwarding">转发</string>
+    <string name="four_days_later">（四天后）</string>
+    <string name="frequency">Frequency</string>
+    <string name="full_cycle">已为您全部循环播放</string>
+    <string name="function_help_view_title">你可以这样跟我说：</string>
+    <string name="function_limit">尾号限行</string>
+    <string name="function_net_radio">网络电台</string>
+    <string name="function_quick_setting">快捷控制</string>
+    <string name="function_traffic">实时路况</string>
+    <string name="function_wechat">微信</string>
+    <string name="future">（未来）</string>
+    <string name="gaode_check_net">没有网络连接，请检查网络</string>
+    <string name="gaode_install_map">安装高德地图客户端体验会更好哦</string>
+    <string name="gaode_nofind_map">没有安装高德地图或高德导航</string>
+    <string name="gaode_nofind_route">很抱歉，没有找到合适的路线</string>
+    <string name="gaode_result_nofind">没有找到结果</string>
+    <string name="gaodemap_or_navigation">高德地图或导航</string>
+    <string name="geo_reverse">解析地址中…</string>
+    <string name="geo_reverse_failed">很抱歉，解析位置失败</string>
+    <string name="geo_reversing">解析位置中，请稍候…</string>
+    <string name="geocode_failed">很抱歉，无法解析地址</string>
+    <string name="geocode_prompt">解析地址中</string>
+    <string name="go_to_here">到这里去</string>
+    <string name="grammar_data_compile">数据准备中...</string>
+    <string name="hang_up">挂断</string>
+    <string name="head">Head</string>
+    <string name="help_content_buletooth_item_call_in">2：接听电话</string>
+    <string name="help_content_buletooth_item_call_out">1：打电话</string>
+    <string name="help_content_buletooth_item_send_sms">3：发短信</string>
+    <string name="help_content_status_offline">(离线)</string>
+    <string name="help_text_chat_exit_command">你可以说“取消”退出聊天</string>
+    <string name="help_title">使用帮助</string>
+    <string name="hour">时</string>
+    <string name="i_know_weather_error">天气查询失败，请说查询指定城市的天气</string>
+    <string name="increase_volumne">已增大音量</string>
+    <string name="initing">数据准备中，请稍等...</string>
+    <string name="input_contact_tips">请说联系人，如“%1$s”</string>
+    <string name="item">Item</string>
+    <string name="jump">跳过</string>
+    <string name="left_parentheses">（</string>
+    <string name="list_cycle">已为您列表循环播放</string>
+    <string name="load_more">查看更多</string>
+    <string name="loading_text">准备中,请稍等</string>
+    <string name="loading_wakeup_text">修改中...</string>
+    <string name="localSearch_confirm_ansewer_text">请说导航或说打电话</string>
+    <string name="localSearch_confirm_no_phone_ansewer_text">请说导航</string>
+    <string name="local_data_form">数据来源于大众点评网</string>
+    <string name="local_data_is_no">大众点评网数据为空</string>
+    <string name="local_data_is_no_amap">定位出了点小问题！</string>
+    <string name="local_out_title_muti">找到以下%1$s,请选择:</string>
+    <string name="local_search_distance">距离%1$.2fKM</string>
+    <string name="local_search_food_price">人均： ¥</string>
+    <string name="local_search_no_number">暂无号码</string>
+    <string name="local_search_rating_code">评分：%1$.1f</string>
+    <string name="locate_failed">很抱歉，获取当前位置失败，无法提供查询服务</string>
+    <string name="locating">正在定位中，请稍候…</string>
+    <string name="location_change_default_hint">请输入地址</string>
+    <string name="location_heard_title_prefix">找到位置  “</string>
+    <string name="location_heard_title_suffix">”</string>
+    <string name="location_search_default_hint_localsearch">请说周边类别的名称</string>
+    <string name="location_search_default_hint_route">请输入目的地，如“徐家汇”</string>
+    <string name="main_all_function">全部功能</string>
+    <string name="main_auto_help_text_begin">点击试试说\t</string>
+    <string name="main_help_text_no_network">请连网后操作</string>
+    <string name="main_help_text_wakeup_prefix">可以说 </string>
+    <string name="main_help_text_wakeup_suffix">唤醒语音</string>
+    <string name="main_local_search">周 边</string>
+    <string name="main_more">更多</string>
+    <string name="main_phone_call">打电话</string>
+    <string name="main_push">通知中心</string>
+    <string name="map_navigation">导 航</string>
+    <string name="map_or_navigation">地图或导航</string>
+    <string name="map_suggestions">起点或终点有歧义,建议：</string>
+    <string name="map_webview_loading_text">地图拼命加载中...</string>
+    <string name="mark_speech_service_from">语音服务来自 </string>
+    <string name="mark_unisound">云知声</string>
+    <string name="max_volumne">最大音量</string>
+    <string name="me_think">让我想一想</string>
+    <string name="memo">提醒</string>
+    <string name="memo_date_format">日期：%s</string>
+    <string name="memo_due_date">Date:2012-11-28</string>
+    <string name="memo_due_time_earlier_than_now">提醒时间早于现在哦</string>
+    <string name="memo_list">提醒列表</string>
+    <string name="memo_time_format">时间：%s</string>
+    <string name="memo_time_length_prompt_dd_hh_mm">%1$s天%2$s小时%3$s分钟</string>
+    <string name="memo_time_length_prompt_hh_mm">%1$s小时%2$s分钟</string>
+    <string name="memo_time_length_prompt_mm_ss">%1$s分%2$s秒</string>
+    <string name="memo_tostring_format">%1$s提醒您%2$s</string>
+    <string name="mic_exception">麦克风异常!</string>
+    <string name="mic_idle">点击说话</string>
+    <string name="mic_oneshot_recoginzer_timeout">这样说:%1$s,打电话给张三</string>
+    <string name="mic_prepare">正在准备...</string>
+    <string name="mic_prepare_doreso">请哼唱出你想听的歌</string>
+    <string name="mic_processing">正在识别...</string>
+    <string name="mic_recording">正在倾听</string>
+    <string name="min_volumne">最小音量</string>
+    <string name="minute">分</string>
+    <string name="missed_reminder">错过的提醒</string>
+    <string name="missed_reminder_during_shutdown">不要忘记这些提醒哦：%s</string>
+    <string name="mms_from_confirm">短信来自<ns1:g>%1$s</ns1:g>,播报还是取消</string>
+    <string name="mobile_phone_assistant">语音魔方手机助手 | </string>
+    <string name="mobile_type">移动</string>
+    <string name="more">更多</string>
+    <string name="mulapp_chooseTitle">请选择应用</string>
+    <string name="music">听音乐</string>
+    <string name="music_buffer">音乐缓冲中...</string>
+    <string name="music_center_text">00:14/06:07</string>
+    <string name="music_play">音 乐</string>
+    <string name="music_play_background">后台音乐播放</string>
+    <string name="music_play_background_off">后台音乐播放关闭</string>
+    <string name="music_play_background_on">后台音乐播放开启</string>
+    <string name="music_play_error">该歌曲播放异常</string>
+    <string name="music_playing">音乐已在播放中</string>
+    <string name="music_processing">让我想一想...</string>
+    <string name="music_recording">正在识别音乐旋律...</string>
+    <string name="music_search_failed">很抱歉，没有找到相关歌曲</string>
+    <string name="music_search_result">共为您找到%s首相关歌曲，点击查看</string>
+    <string name="music_service_binder_error">音乐服务连接异常，请重试</string>
+    <string name="music_title_result_play">马上为你播放：</string>
+    <string name="music_title_result_unknow">未能识别听到的音乐.</string>
+    <string name="music_url_empty">很抱歉，歌曲地址无法获取</string>
+    <string name="mutiple_ansewer_text">请说第几个或说取消</string>
+    <string name="mutiple_hand_choose_ansewer_text">请手动选择</string>
+    <string name="name">Name</string>
+    <string name="next">已执行下一个</string>
+    <string name="next_page">下一页</string>
+    <string name="next_page_protocal">{\"service\":\"DOMAIN_LOCAL\",\"message\":\"下一页\",\"select\":\"101\"}</string>
+    <string name="next_page_title">翻页可以说 “上一页、下一页”</string>
+    <string name="no_phone_run_sms">--没有电话中，启动短信TTS--</string>
+    <string name="no_recommend_programme">没有具体信息</string>
+    <string name="no_reminder">暂无提醒</string>
+    <string name="no_route_found">很抱歉，没有查找到路线</string>
+    <string name="no_support_cmd">不支持<ns1:g>%1$s</ns1:g>命令</string>
+    <string name="no_support_phone">--不支持打电话--</string>
+    <string name="no_support_phone_toast">此设备不支持打电话功能</string>
+    <string name="no_weather_info">没有获取到天气信息</string>
+    <string name="nofind_contact">没有找到联系人</string>
+    <string name="not_activated">未激活</string>
+    <string name="now_am">正在为您调幅<ns1:g>%1$s</ns1:g></string>
+    <string name="now_distinguish">正在识别，不进行处理</string>
+    <string name="now_first_page">已经是第一页</string>
+    <string name="now_fm">正在为您调频<ns1:g>%1$s</ns1:g></string>
+    <string name="now_last_page">已经是最后一页</string>
+    <string name="now_wakeup">正在唤醒，不进行处理</string>
+    <string name="number">Number</string>
+    <string name="number_capital">零一二三四五六七八九</string>
+    <string name="ok">确定</string>
+    <string name="onfind_place">{0}应用的收藏夹中未找到地点\'{1}\'</string>
+    <string name="open_3g">已为你打开移动网络</string>
+    <string name="open_bluetooth">已打开蓝牙</string>
+    <string name="open_broadcast">打开电台应用</string>
+    <string name="open_desk_lyric">已打开桌面歌词</string>
+    <string name="open_display_settings">已为你打开显示设置</string>
+    <string name="open_map">打开地图</string>
+    <string name="open_model_mute">已设置为静音模式</string>
+    <string name="open_model_vibra">已设置为振动模式</string>
+    <string name="open_music">正在为您打开音乐</string>
+    <string name="open_rotation">已打开自动旋转屏幕</string>
+    <string name="open_sound_setting">已为你打开声音设置</string>
+    <string name="open_time_settings">已为你打开时间设置</string>
+    <string name="open_wallpaper_setting">已为你打开壁纸设置</string>
+    <string name="open_web">点击打开网页</string>
+    <string name="open_wifi">已打开无线网络</string>
+    <string name="open_wifi_spot">已打开WIFI热点</string>
+    <string name="operation_cancel">操作已取消</string>
+    <string name="operation_cancel2">本次操作已取消</string>
+    <string name="other_setting">其他设置</string>
+    <string name="page_number">第 <ns1:g id="page1">%1$s</ns1:g>页 (共 <ns1:g id="page2">%2$s</ns1:g>页)</string>
+    <string name="pause">已执行暂停</string>
+    <string name="per_capita">人均：￥</string>
+    <string name="phone">电话：</string>
+    <string name="phone_answer_cancel">来电,接听还是挂断?</string>
+    <string name="play">已执行播放</string>
+    <string name="play_previous">已播放上一首</string>
+    <string name="poi">导航</string>
+    <string name="poi_data_empty">很抱歉，路线起点和终点数据为空，无法为您查找路线。</string>
+    <string name="poi_geo_null">很抱歉，该地点没有位置，无法为您打开地图</string>
+    <string name="preference_about">关于我们</string>
+    <string name="preference_general_setting">通用设置</string>
+    <string name="preference_version">版本号</string>
+    <string name="previous">已执行上一个</string>
+    <string name="previous_page">上一页</string>
+    <string name="prompt">提示</string>
+    <string name="quit">退出</string>
+    <string name="radio">收音机</string>
+    <string name="random_play">已为您随机播放</string>
+    <string name="readable_time_day_after_tomorrow">（后天）</string>
+    <string name="readable_time_day_before_yesterday">（前天）</string>
+    <string name="readable_time_today">（今天）</string>
+    <string name="readable_time_tomorrow">（明天）</string>
+    <string name="readable_time_yesterday">（昨天）</string>
+    <string name="recovery">已执行恢复</string>
+    <string name="register_reminder_prompt">%s后提示</string>
+    <string name="reminder">提醒</string>
+    <string name="reput">重新输入</string>
+    <string name="result_nofind">抱歉，未找到结果</string>
+    <string name="retry">重试</string>
+    <string name="right_parentheses">）</string>
+    <string name="route_condition">优先条件：</string>
+    <string name="route_path_point">途径点：</string>
+    <string name="route_planning">路线规划</string>
+    <string name="route_searching">查找路线中，请稍候…</string>
+    <string name="save">保存</string>
+    <string name="say_number_choose">可说“第1个”选择</string>
+    <string name="search">搜索</string>
+    <string name="search_in">请在FM87.5-108兆赫中搜索</string>
+    <string name="search_timeout">很抱歉，查找地图超时</string>
+    <string name="searching">正在搜索…</string>
+    <string name="see_help">查看帮助</string>
+    <string name="select_map">选择地图</string>
+    <string name="send">发送</string>
+    <string name="send_sms_answer">给%1$s的%2$s号码发短信</string>
+    <string name="send_sms_exception">短信功能异常，发送短信失败</string>
+    <string name="sequence_play">已为您顺序播放</string>
+    <string name="setting">快捷控制</string>
+    <string name="setting_float_mic_closed">已关闭</string>
+    <string name="setting_float_mic_open">已打开</string>
+    <string name="setting_help">使用帮助</string>
+    <string name="setting_help_text_aec">当输入的语音指令识别后，语音合成（TTS）会回复相应的反馈。开启后，可说当前支持的命令（如“第一个”），来中断当前的TTS，直接执行下一步骤，提高操作效率。</string>
+    <string name="setting_help_text_float_mic">开启后，主界面和其它应用程序界面会显示一个圆形麦克风图标，点击可以开启语音操作。</string>
+    <string name="setting_help_text_loading">正在切换…</string>
+    <string name="setting_help_text_oneshot">唤醒词+命令，一句话唤醒语音系统，同时执行相应的命令。例子：在语音系统休眠状态下， 说“%1$s，查找附近的加油站”，就可以快速实现周边查询。</string>
+    <string name="setting_help_text_version_mode_1">当会话流程结束后，会自动开启录音。此模式适用于体验和尝试语音的各功能，不推荐实际驾驶时使用。</string>
+    <string name="setting_help_text_version_mode_2">每次会话，都需要先开启语音系统（说唤醒口令或者点击话筒图标），才能输入语音指令。</string>
+    <string name="setting_help_text_version_mode_3">唤醒词+命令，一句话唤醒语音系统，同时执行相应的命令。如：“%1$s，查找附近的加油站”，就可以快速实现周边查询。</string>
+    <string name="setting_help_text_wakeup">说固定的语音口令，可以唤醒呼出语音系统，进行语音操作。点击“铅笔”图标可以修改唤醒名字。</string>
+    <string name="setting_help_title_version_mode_1">体验模式（不推荐）</string>
+    <string name="setting_help_title_version_mode_2">经典模式（默认）</string>
+    <string name="setting_help_title_version_mode_3">高阶模式</string>
+    <string name="setting_map_choose_baidu">百度</string>
+    <string name="setting_map_choose_daodaotong">道道通</string>
+    <string name="setting_map_choose_gaode">高德</string>
+    <string name="setting_map_choose_tuba">图吧</string>
+    <string name="setting_ota_text_app_duedate">试用版本到期时间为：%1$s</string>
+    <string name="setting_ota_text_newest_version">当前为最新版本。</string>
+    <string name="setting_ota_text_version">UniDrive\t%1$s</string>
+    <string name="setting_status_version_mode_exp">体验模式</string>
+    <string name="setting_status_version_mode_high">高阶模式</string>
+    <string name="setting_status_version_mode_standard">经典模式</string>
+    <string name="setting_title_about_us">关于我们</string>
+    <string name="setting_title_addr_favorite">地址收藏夹</string>
+    <string name="setting_title_aec">播报打断</string>
+    <string name="setting_title_aec_hint">在语音播报时,可打断</string>
+    <string name="setting_title_float_mic">悬浮麦克风</string>
+    <string name="setting_title_map_choose">地图选择</string>
+    <string name="setting_title_more">更多</string>
+    <string name="setting_title_oneshot">OneShot</string>
+    <string name="setting_title_oneshot_hint">如“%1$s,打开蓝牙”</string>
+    <string name="setting_title_ota">版本升级</string>
+    <string name="setting_title_tts_speed">播报速度</string>
+    <string name="setting_title_tts_timbre">语音包</string>
+    <string name="setting_title_version_mode">对话模式</string>
+    <string name="setting_title_wakeup">语音唤醒</string>
+    <string name="setting_tts_speed_fast">较快</string>
+    <string name="setting_tts_speed_slowly">较慢</string>
+    <string name="setting_tts_speed_standard">标准</string>
+    <string name="setting_tts_timbre_auto">听声识男女</string>
+    <string name="setting_tts_timbre_sexy">台湾腔女声</string>
+    <string name="setting_tts_timbre_standard">标准女声</string>
+    <string name="setting_version_mode_exp">体验</string>
+    <string name="setting_version_mode_high">高阶</string>
+    <string name="setting_version_mode_standard">经典</string>
+    <string name="setting_wakeup_status_closed">已关闭</string>
+    <string name="seven_days_later">（七天后）</string>
+    <string name="single_cycle">已为您单曲循环</string>
+    <string name="six_days_later">（六天后）</string>
+    <string name="smsMessageQueued">当前无法发送信息，将在服务恢复后发送</string>
+    <string name="sms_activity_not_found">该设备暂不支持发送短信</string>
+    <string name="sms_content">短信内容</string>
+    <string name="sms_content_fast_reply">"我正在开车，稍后再回复。"</string>
+    <string name="sms_date_format">MM月dd日kk:mm</string>
+    <string name="sms_input_contact_title">发短信给谁？</string>
+    <string name="sms_is">短信内容是:<ns1:g>%1$s</ns1:g></string>
+    <string name="sms_no_new">没有新的短信</string>
+    <string name="sms_re_enter">{\"message\":\"重新输入\",\"service\":\"DOMAIN_LOCAL\",\"confirm\":\"clean\"}</string>
+    <string name="sms_received_btn_broadcast">播报</string>
+    <string name="sms_received_btn_fast_reply">快捷回复</string>
+    <string name="sms_received_btn_reply">回复</string>
+    <string name="sms_received_title_from">来自\t%1$s\t的新短信！</string>
+    <string name="sms_sending">短信发送中...</string>
+    <string name="sms_sent_fail">短信发送失败！</string>
+    <string name="sms_sent_success">短信已发送！</string>
+    <string name="sms_speak_content">请说短信内容</string>
+    <string name="sms_to">发短信给\t%1$s:</string>
+    <string name="song">Song</string>
+    <string name="sort">sort</string>
+    <string name="speech_category_title">语音播报设置</string>
+    <string name="splash_text1">北京云知声信息技术有限公司</string>
+    <string name="splash_version">Version：V2.0.1.1.119</string>
+    <string name="start_from_here">从这里出发</string>
+    <string name="start_poi">起点：</string>
+    <string name="start_poi_location">我的位置</string>
+    <string name="station">Station</string>
+    <string name="stock_closing_price">昨收价： <ns1:g>%1$s</ns1:g></string>
+    <string name="stock_highest_price">最高价： <ns1:g>%1$s</ns1:g></string>
+    <string name="stock_info">查股票</string>
+    <string name="stock_lowest_price">最低价： <ns1:g>%1$s</ns1:g></string>
+    <string name="stock_pening_price">今开价： <ns1:g>%1$s</ns1:g></string>
+    <string name="stock_query_empty">很抱歉，股票代码或者交易所名称为空，无法为您查询股票信息</string>
+    <string name="stop">已执行停止</string>
+    <string name="stranger">陌生人</string>
+    <string name="talk_communication_err">网络出了点状况，请稍候再试一下</string>
+    <string name="talk_network_exception">没有找到可用的网络，您可以检查一下网络设置</string>
+    <string name="talk_network_outtime">当前网络有点繁忙，请过会再试</string>
+    <string name="talk_server_exception">好像网络不给力哦，要不您一会儿再试一下？</string>
+    <string name="tarin_query_prompt_format">已为您查询到%1$s到%2$s的火车</string>
+    <string name="telecom_type">电信</string>
+    <string name="text_go_company">回公司</string>
+    <string name="text_go_home">回家</string>
+    <string name="text_no_address_added">未添加地址</string>
+    <string name="text_number">45566</string>
+    <string name="text_search_location_no_address">暂无相应信息</string>
+    <string name="text_to_eight">八</string>
+    <string name="text_to_five">五</string>
+    <string name="text_to_four">四</string>
+    <string name="text_to_nine">九</string>
+    <string name="text_to_one">腰</string>
+    <string name="text_to_seven">七</string>
+    <string name="text_to_six">六</string>
+    <string name="text_to_three">三</string>
+    <string name="text_to_two">二</string>
+    <string name="text_to_zero">零</string>
+    <string name="three_days_later">（三天后）</string>
+    <string name="time">Time:</string>
+    <string name="title">Title</string>
+    <string name="title_connect_mobile">连接手机</string>
+    <string name="title_format_arg_info">信息</string>
+    <string name="to">到</string>
+    <string name="to_do">待办</string>
+    <string name="to_stock">的股票</string>
+    <string name="toast_click_again_to_exit">再按一次退出程序</string>
+    <string name="toast_input_localsearch_type">请输入周边类别的名称，如“酒店”</string>
+    <string name="toast_input_localsearch_type_error">格式不正确，请输入周边类别的名称，如“酒店”</string>
+    <string name="toast_input_location">请输入地址，如“徐家汇”</string>
+    <string name="toast_input_location_error">格式不正确，请输入地址，如“徐家汇”</string>
+    <string name="toast_wakeup_closed">语音唤醒已关闭</string>
+    <string name="toast_wakeup_open">我是您的小助手，名字叫“%1$s”，您也可以帮我取个昵称</string>
+    <string name="today">今天</string>
+    <string name="today2">（今天）</string>
+    <string name="tomorrow">明天</string>
+    <string name="traffic_control_rule_no_limit">不限</string>
+    <string name="traffic_control_rule_title">限行规则</string>
+    <string name="traffic_control_text_and">和</string>
+    <string name="traffic_control_title">限行尾号：</string>
+    <string name="traffic_no_info_find">没有查询到路况信息</string>
+    <string name="try_process">试用处理，其他</string>
+    <string name="tts_choose_dialog_title">语音识别引擎选择</string>
+    <string name="tts_choose_title">语音识别引擎选择</string>
+    <string name="tts_current_poi">您当前的位置是：%1$s</string>
+    <string name="tts_date">年$2月$3日</string>
+    <string name="tts_exit_navi">已为您退出导航。</string>
+    <string name="tts_get_poi_failed">定位失败，请稍后再试。</string>
+    <string name="tts_not_support_cmd">该场景不支持此命令。</string>
+    <string name="tts_route_arrive_destination">"到达目的地"</string>
+    <string name="tts_route_calculate_route_failure">"路径计算失败，请检查网络或输入参数"</string>
+    <string name="tts_route_calculate_route_success">"路径计算就绪"</string>
+    <string name="tts_route_end_navi">"导航结束"</string>
+    <string name="tts_route_recalculate_for_traffic_jam">"前方路线拥堵，路线重新规划"</string>
+    <string name="tts_route_yaw">"您已偏离航线"</string>
+    <string name="tts_wechat_install_no_bind">车载微信助手服务不稳定，请重新扫描二维码登录。</string>
+    <string name="tts_wechat_no_install">车载微信助手未安装，请安装后再试。</string>
+    <string name="tts_wechat_no_running">车载微信助手未登录，请扫描二维码登录。</string>
+    <string name="turn">转</string>
+    <string name="tv_page">1/2</string>
+    <string name="tv_recomm_channel">频道</string>
+    <string name="tv_recomm_detail">详情</string>
+    <string name="tv_recomm_time">时间</string>
+    <string name="tv_recommend_no_recomm">没有热门电视节目推荐</string>
+    <string name="tv_recommend_title">热门电视节目推荐</string>
+    <string name="unicom_type">联通</string>
+    <string name="unknown">未知</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="up_page_protocal">{\"service\":\"DOMAIN_LOCAL\",\"message\":\"上一页\",\"select\":\"100\"}</string>
+    <string name="view_sorry">对不起，无法打开网页，可能您的设备中没有安装浏览器</string>
+    <string name="view_source_web">查看网页</string>
+    <string name="wait_close_setting_inair">关闭飞行模式，需要一定的时间，请耐心等待</string>
+    <string name="wait_open_setting_inair">设置为飞行模式，需要一定的时间，请耐心等待</string>
+    <string name="wake_up_remind">注意：开启语音唤醒功能后会消耗更多电量！</string>
+    <string name="wakeup_status_mic_closed">唤醒已关闭</string>
+    <string name="wakeup_status_mic_open">唤醒口令</string>
+    <string name="wakeup_word_default">你好魔方</string>
+    <string name="weather_air_quality">空气质量： </string>
+    <string name="weather_blizzard">暴雪</string>
+    <string name="weather_car_wash">洗车指数： </string>
+    <string name="weather_cloudy">多云</string>
+    <string name="weather_data"><ns1:g>%1$s</ns1:g>月<ns1:g>%2$s</ns1:g>日</string>
+    <string name="weather_dust">浮尘</string>
+    <string name="weather_dustblow">扬沙</string>
+    <string name="weather_foggy">雾</string>
+    <string name="weather_hail">雷阵雨伴有冰雹</string>
+    <string name="weather_haze">霾</string>
+    <string name="weather_icerain">冻雨</string>
+    <string name="weather_overcast">阴</string>
+    <string name="weather_pm25">PM 2.5 : </string>
+    <string name="weather_query">查天气</string>
+    <string name="weather_rain_heavy">大雨</string>
+    <string name="weather_rain_light">小雨</string>
+    <string name="weather_rain_moderate">中雨</string>
+    <string name="weather_rainstorm">暴雨</string>
+    <string name="weather_rainstorm_big">大暴雨</string>
+    <string name="weather_rainstorm_super">特大暴雨</string>
+    <string name="weather_sandstorm">沙尘暴</string>
+    <string name="weather_sandstorm_strong">强沙尘暴</string>
+    <string name="weather_shower">阵雨</string>
+    <string name="weather_sleety">雨夹雪</string>
+    <string name="weather_snow_heavy">大雪</string>
+    <string name="weather_snow_light">小雪</string>
+    <string name="weather_snow_moderate">中雪</string>
+    <string name="weather_snow_shower">阵雪</string>
+    <string name="weather_sunny">晴</string>
+    <string name="weather_thunder_rain">雷阵雨</string>
+    <string name="weather_today">今天</string>
+    <string name="weather_tomorrow">明天</string>
+    <string name="weather_update_time">天气数据更新于： </string>
+    <string name="week_friday">周五</string>
+    <string name="week_monday">周一</string>
+    <string name="week_saturday">周六</string>
+    <string name="week_thursday">周四</string>
+    <string name="week_tuesday">周二</string>
+    <string name="week_wednesday">周三</string>
+    <string name="week_weekend">周末</string>
+    <string name="yesterday">昨天</string>
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:scrollbarThumbHorizontal">@android:color/transparent</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_thumb_vertical_bg</item>
+        <item name="android:scrollbarSize">3dp</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="GuideDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+    <style name="PoiRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_poi_full_filled</item>
+        <item name="android:minHeight">11dip</item>
+        <item name="android:maxHeight">11dip</item>
+    </style>
+    <style mce_bogus="1" name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+    <style name="ProgressBarHorizontalStyle" parent="android:style/Widget.ProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/progress_bar_drawable</item>
+    </style>
+    <style name="ProgressBarWebViewLoadingStyle" parent="android:style/Widget.ProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/webview_progress_bar</item>
+    </style>
+    <style name="TextEditorDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.SmsNewCustomDialog" parent="android:Theme.Light">
+        <item name="android:windowBackground">@color/sms_title</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+    <style name="f2_main_head_help_text">
+        <item name="android:textSize">@dimen/text_size_f2</item>
+        <item name="android:textColor">@color/color_main_auto_help_text</item>
+    </style>
+    <style name="text_activity_title_f2">
+        <item name="android:textSize">@dimen/text_size_f2</item>
+        <item name="android:textColor">@color/color_text_tips</item>
+    </style>
+    <style name="text_asr_result_f1">
+        <item name="android:textSize">@dimen/text_size_f1</item>
+        <item name="android:textColor">@color/color_asr_result_text</item>
+    </style>
+    <style name="text_asr_result_f3">
+        <item name="android:textSize">@dimen/text_size_f3</item>
+        <item name="android:textColor">@color/color_asr_result_text</item>
+    </style>
+    <style name="text_assist_1_f3">
+        <item name="android:textSize">@dimen/text_size_f3</item>
+        <item name="android:textColor">@color/color_text_assist_1</item>
+    </style>
+    <style name="text_assist_1_f4">
+        <item name="android:textSize">@dimen/text_size_f4</item>
+        <item name="android:textColor">@color/color_text_assist_1</item>
+    </style>
+    <style name="text_assist_1_f5">
+        <item name="android:textSize">@dimen/text_size_f5</item>
+        <item name="android:textColor">@color/color_text_assist_1</item>
+    </style>
+    <style name="text_assist_2_f3">
+        <item name="android:textSize">@dimen/text_size_f3</item>
+        <item name="android:textColor">@color/color_text_assist_2</item>
+    </style>
+    <style name="text_assist_2_f4">
+        <item name="android:textSize">@dimen/text_size_f4</item>
+        <item name="android:textColor">@color/color_text_assist_2</item>
+    </style>
+    <style name="text_assist_2_f5">
+        <item name="android:textSize">@dimen/text_size_f5</item>
+        <item name="android:textColor">@color/color_text_assist_2</item>
+    </style>
+    <style name="text_body">
+        <item name="android:textSize">@dimen/help_submenu_text_size</item>
+        <item name="android:textColor">@color/grey_white</item>
+    </style>
+    <style name="text_chat_cloud_f3">
+        <item name="android:textSize">@dimen/text_size_f3</item>
+        <item name="android:textColor">@color/color_text_chat_cloud</item>
+    </style>
+    <style name="text_chat_user_f3">
+        <item name="android:textSize">@dimen/text_size_f3</item>
+        <item name="android:textColor">@color/color_text_chat_user</item>
+    </style>
+    <style name="text_mark_f4">
+        <item name="android:textSize">@dimen/text_size_f4</item>
+        <item name="android:textColor">@color/color_main_auto_help_text</item>
+    </style>
+    <style name="text_mark_hl_f4">
+        <item name="android:textSize">@dimen/text_size_f4</item>
+        <item name="android:textColor">@color/color_wakeup_word</item>
+    </style>
+    <style name="text_note">
+        <item name="android:textSize">@dimen/help_note_text_size</item>
+        <item name="android:textColor">@color/space_grey</item>
+    </style>
+    <style name="text_session_item_f3">
+        <item name="android:textSize">@dimen/text_size_f3</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="text_session_item_f3_tips">
+        <item name="android:textSize">@dimen/text_size_f3</item>
+        <item name="android:textColor">@color/color_text_tips</item>
+    </style>
+    <style name="text_session_item_f3_tips_recording">
+        <item name="android:textSize">@dimen/text_size_f3</item>
+        <item name="android:textColor">@color/color_main_auto_help_text</item>
+    </style>
+    <style name="text_session_item_f4">
+        <item name="android:textSize">@dimen/text_size_f4</item>
+        <item name="android:textColor">@color/grey_white</item>
+    </style>
+    <style name="text_session_item_f4_link">
+        <item name="android:textSize">@dimen/text_size_f4</item>
+        <item name="android:textColor">@color/color_text_link</item>
+    </style>
+    <style name="text_session_item_f4_time">
+        <item name="android:textSize">@dimen/text_size_f4</item>
+        <item name="android:textColor">@color/color_wakeup_word</item>
+    </style>
+    <style name="text_session_item_f4_tips">
+        <item name="android:textSize">@dimen/text_size_f4</item>
+        <item name="android:textColor">@color/color_text_tips</item>
+    </style>
+    <style name="text_session_item_f5">
+        <item name="android:textSize">@dimen/text_size_f5</item>
+        <item name="android:textColor">@color/grey_white</item>
+    </style>
+    <style name="text_session_item_f5_tips">
+        <item name="android:textSize">@dimen/text_size_f5</item>
+        <item name="android:textColor">@color/color_text_tips</item>
+    </style>
+    <style name="text_session_item_f6">
+        <item name="android:textSize">@dimen/text_size_f6</item>
+        <item name="android:textColor">@color/grey_white</item>
+    </style>
+    <style name="text_session_item_f6_tips">
+        <item name="android:textSize">@dimen/text_size_f6</item>
+        <item name="android:textColor">@color/color_text_tips</item>
+    </style>
+    <style name="text_session_item_number_f3">
+        <item name="android:textSize">@dimen/text_size_f3</item>
+        <item name="android:textColor">@color/color_session_item_number</item>
+    </style>
+    <style name="text_session_title_f1">
+        <item name="android:textSize">@dimen/text_size_f1</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="text_session_title_f2">
+        <item name="android:textSize">@dimen/text_size_f2</item>
+        <item name="android:textColor">@color/grey_white</item>
+    </style>
+    <style name="text_title_location_keyword_f2">
+        <item name="android:textSize">@dimen/text_size_f2</item>
+        <item name="android:textColor">@color/color_wakeup_word</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="text_traffic_control_number_f1">
+        <item name="android:textSize">@dimen/text_size_f1</item>
+        <item name="android:textColor">@color/color_traffic_control_number</item>
+    </style>
+    <style name="text_traffic_control_number_header">
+        <item name="android:textSize">@dimen/text_size_f3</item>
+        <item name="android:textColor">@color/color_traffic_control_number</item>
+    </style>
+    <style name="text_wakeup_word_f2">
+        <item name="android:textSize">@dimen/text_size_f2</item>
+        <item name="android:textColor">@color/color_wakeup_word</item>
+    </style>
+    <style name="text_wakeup_word_f3">
+        <item name="android:textSize">@dimen/text_size_f3</item>
+        <item name="android:textColor">@color/color_wakeup_word</item>
+    </style>
+    <style name="text_webview_f2">
+        <item name="android:textSize">@dimen/text_size_f2</item>
+        <item name="android:textColor">@color/color_webview_loading_text</item>
+    </style>
+</resources>

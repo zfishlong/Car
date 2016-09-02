@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_page_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_pannel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/second_page_banner_height" >
+
+        <TextView
+            android:id="@+id/tv_title_function_name"
+            style="@style/text_activity_title_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_title_addr_favorite" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_setting_margin"
+            android:background="@drawable/btn_menu_back"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/features_list_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/text_session_title_f2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/text_go_home"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_setting_home_address"
+                    style="@style/text_session_item_f4_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="@string/text_no_address_added" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_setting_go_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/selector_btn_add_favorite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="#19181C26"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/text_session_title_f2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/text_go_company"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_setting_company_address"
+                    style="@style/text_session_item_f4_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="@string/text_no_address_added" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_setting_go_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/selector_btn_add_favorite" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

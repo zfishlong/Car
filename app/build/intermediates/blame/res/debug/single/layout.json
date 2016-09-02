@@ -1,0 +1,482 @@
+[
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sms_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\sms_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_load_next_pre.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\list_item_load_next_pre.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_localsearch.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\list_item_localsearch.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_all_function.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_all_function.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_push_list.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_push_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\route_tab_indicator.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\route_tab_indicator.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_location.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\position_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\position_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pager_layout2.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pager_layout2.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\weather_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\weather_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_location_amap.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\view_location_amap.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mic_control.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\mic_control.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_chat.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\view_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_voice.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\dialog_voice.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pickview_buttom_muti_numbers.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pickview_buttom_muti_numbers.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mobile_connection.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_mobile_connection.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\poi_list_header.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\poi_list_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcome.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fm_waiting_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\fm_waiting_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\session_mic_status_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\session_mic_status_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_location_baidu_map.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\view_location_baidu_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gaode_route.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_gaode_route.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\function_help_activity_list_item.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\function_help_activity_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\localsearch.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\localsearch.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\help_listview_menu_title.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\help_listview_menu_title.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about_us.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_about_us.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_load_more.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\list_item_load_more.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pop_edit_wakeupword_layout.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pop_edit_wakeupword_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baidu_route.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_baidu_route.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_poi_around_search_edit.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\layout_poi_around_search_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pickview_item_contact.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pickview_item_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_loading.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\view_loading.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pickview_header_muti_numbers.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pickview_header_muti_numbers.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pickview_header_contact.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pickview_header_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\function_help_view_item.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\function_help_view_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\session_asr_result_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\session_asr_result_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\help_listview_submenu.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\help_listview_submenu.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_chat.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\list_item_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_add_address.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\layout_add_address.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pickview_header_location.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pickview_header_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\localsearch_item_show_layout.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\localsearch_item_show_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\location_number.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\location_number.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings_view_pager.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_settings_view_pager.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_function_help_bluetooth.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_function_help_bluetooth.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amap_traffic_activity.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\amap_traffic_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\weather_view_v3_otherday.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\weather_view_v3_otherday.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\session_answer_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\session_answer_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\poi_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\poi_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_i_know_button.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\view_i_know_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\session_question_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\session_question_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_search_location.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\layout_search_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\general_answer_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\general_answer_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pager_setting_map_layout_1.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pager_setting_map_layout_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pager_all_functions_layout_1.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pager_all_functions_layout_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\function_show_dialog_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\function_show_dialog_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\call_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\call_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pop_main_menu.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pop_main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_head_listview.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\layout_head_listview.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_no_person.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\view_no_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_localsearch_amap_js.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\layout_localsearch_amap_js.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\weather_view_v3_otherday_content.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\weather_view_v3_otherday_content.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_route_plan_no_map.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_route_plan_no_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\page_divider.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\page_divider.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_edit_location.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\layout_edit_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\localsearch_pop_keyword_list.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\localsearch_pop_keyword_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pager_settings_layout_3.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pager_settings_layout_3.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\weather_view_v3_today.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\weather_view_v3_today.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\push_message_received_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\push_message_received_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sms_received_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\sms_received_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pager_settings_layout_4.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pager_settings_layout_4.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\divider.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\divider.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pager_settings_layout_1.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pager_settings_layout_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mic_doreso_control.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\mic_doreso_control.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\route_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\route_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_location_amap_js.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\layout_location_amap_js.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\localsearch_pop_keyword_list_item.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\localsearch_pop_keyword_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\music_result_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\music_result_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pickview_base.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pickview_base.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\weather_view_v3_today_content.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\weather_view_v3_today_content.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\stock_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\stock_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\flight_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\flight_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\session_mic_status_recording_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\session_mic_status_recording_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pop_setting_loading.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pop_setting_loading.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\vertical_divider.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\vertical_divider.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pager_all_functions_layout_2.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pager_all_functions_layout_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ota.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_ota.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_address_favorite.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_address_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\localsearch_route_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\localsearch_route_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\waiting_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\waiting_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\call_incoming_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\call_incoming_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\flight_abnormal_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\flight_abnormal_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\poi_sort_list_item.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\poi_sort_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_text_editor.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\dialog_text_editor.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gaode_location.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_gaode_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baidu_locationoverlay.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_baidu_locationoverlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_chat_web.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\view_chat_web.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\localsearch_waiting_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\localsearch_waiting_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pager_layout1.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pager_layout1.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_test_main.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_test_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\web_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\web_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\local_search_dataform_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\local_search_dataform_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_simplegps_navi2.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_simplegps_navi2.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_function_help_list.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_function_help_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_layout.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_poi_around_search_amap.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\layout_poi_around_search_amap.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pickview_item_muti_numbers.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pickview_item_muti_numbers.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_waiting_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\dialog_waiting_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pop_setting_help.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pop_setting_help.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\route_waiting_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\route_waiting_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\traffic_control_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\traffic_control_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pager_settings_layout_2.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pager_settings_layout_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\multidomain_content_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\multidomain_content_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_help.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_help.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\window_service_main.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\window_service_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pickview_item_location.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\pickview_item_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\push_message_item_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\push_message_item_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_main_input_poi.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\layout_main_input_poi.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sms_inbox_item.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\sms_inbox_item.xml"
+    }
+]

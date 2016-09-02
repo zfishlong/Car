@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\raw\\start_tone.ogg",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\raw\\start_tone.ogg"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\raw\\error_tone.ogg",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\raw\\error_tone.ogg"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\raw\\result_tone.ogg",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\raw\\result_tone.ogg"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\raw\\mute_tone.ogg",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\raw\\mute_tone.ogg"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\raw\\wait_tone.ogg",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\raw\\wait_tone.ogg"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\raw\\stop_tone.ogg",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\raw\\stop_tone.ogg"
+    }
+]
