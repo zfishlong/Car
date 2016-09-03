@@ -268,12 +268,12 @@
         "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\drawable-hdpi\\icon_en.png"
     },
     {
-        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mic_recording_10.png",
-        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\drawable-hdpi\\ic_mic_recording_10.png"
-    },
-    {
         "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\button_incoming_answer_pressed.9.png",
         "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\drawable-hdpi\\button_incoming_answer_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mic_recording_10.png",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\drawable-hdpi\\ic_mic_recording_10.png"
     },
     {
         "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\loading_01.png",

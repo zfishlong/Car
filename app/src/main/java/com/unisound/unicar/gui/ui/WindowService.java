@@ -296,6 +296,7 @@ public class WindowService extends Service {
     public static final String PARAM_TTS_FROM_UNICARGUI = "UniCarGUI";
     public static final String PARAM_TTS_FROM_UNICARNAVI = "UniCarNavi";
     public static final String PARAM_TTS_FROM_UNIWECHAT = "UniCarWeChat";
+
     public String PARAM_TTS_FROM = "";
 
 
@@ -318,6 +319,7 @@ public class WindowService extends Service {
                 }
 
             }
+
         }
     };
 
@@ -344,7 +346,7 @@ public class WindowService extends Service {
     };
 
 
-    //AIDL
+    //AIDL 提供对外操作的接口
     private final IWindowService.Stub mBinder = new IWindowService.Stub() {
 
         @Override
@@ -512,13 +514,13 @@ public class WindowService extends Service {
         }
 
         if (intent != null) {
+
             String action = intent.getAction();
             if (ACTION_START_WINDOWSERVICE.equals(action)) {
                 boolean isCompile = intent.getBooleanExtra(KEY_IS_COMPILE_FINISH, false);
                 if (!isCompile && isASRCompile) {
                     sendBroadcastForWechat();
                 }
-
             } else if (MessageReceiver.ACTION_START_TALK.equals(action)) {
 
                 //开始讲话
@@ -553,6 +555,8 @@ public class WindowService extends Service {
                 requestLocalSearch();
 
             } else if (ACTION_SET_WAKEUP.equals(action)) {
+
+                //设置唤醒
                 if (UserPerferenceUtil.isWakeupEnable(mContext)) {
                     sendProtocolEvent(SessionPreference.EVENT_NAME_SWITCH_WAKEUP,
                             SessionPreference.EVENT_PROTOCAL_SWITCH_WAKEUP_START);
@@ -1565,27 +1569,26 @@ public class WindowService extends Service {
     }
 
     /**
-     * xd added 20150702
-     *
+     * 发送协议事件
      * @param eventName : ON_CONFIRM_OK, ON_CONFIRM_CANCEL, SELECT_ITEM
-     * @param protol
+     * @param protol:
      */
     public void sendProtocolEvent(String eventName, String protol) {
-        Logger.d(TAG, "sendProtocolEvent()----eventName =" + eventName + "; protol = " + protol);
+
         if (SessionPreference.EVENT_NAME_ON_CONFIRM_TIME_UP.equals(eventName)) {
             protol = SessionPreference.EVENT_PROTOCAL_ON_CONFIRM_TIME_UP;
         }
+
         String eventMsg =
-                "{\"type\":\"EVENT\",\"data\":{\"moduleName\":\"GUI\",\"eventName\":\"" + eventName
-                        + "\"},\"param\":" + protol + "}";
-        // {"type":"EVENT","data":{"moduleName":"GUI","eventName":"ON_CONFIRM_OK"},"param":{"service":"cn.yunzhisheng.setting","semantic":{"intent":{"confirm":"OK"}},"code":"SETTING_EXEC"}}
-        // {"type":"EVENT","data":{"moduleName":"GUI","eventName":"ON_CONFIRM_CANCEL"},"param":{"service":"cn.yunzhisheng.setting","semantic":{"intent":{"confirm":"CANCEL"}},"code":"SETTING_EXEC"}}
-        // {"type":"EVENT","data":{"moduleName":"GUI","eventName":"ON_CONFIRM_TIME_UP"},"param":{"service":"cn.yunzhisheng.setting","semantic":{"intent":{"confirm":"TIME_UP"}},"code":"SETTING_EXEC"}}
-        // {"type":"EVENT","data":{"moduleName":"GUI","eventName":"SMS_CONTENT_RETYPE"},"param":{"service":"cn.yunzhisheng.setting","semantic":{"intent":{"confirm":"SMS_CONTENT_RETYPE"}},"code":"SETTING_EXEC"}}
-        Logger.d(TAG, "!--->sendProtol()----eventMsg = " + eventMsg);
+                "{\"type\":\"EVENT\",\"data\":{\"moduleName\":\"GUI\",\"eventName\":\"" + eventName+ "\"},\"param\":" + protol + "}";
         sendMsg(eventMsg);
+
     }
 
+    /**
+     * 发送通知事件
+     * @param pushModle  事件模型
+     */
     private void sendPushEvent(PushModle pushModle) {
         String title = "";
         String content = "content";
@@ -1628,9 +1631,7 @@ public class WindowService extends Service {
 
 
 
-    /**
-     * requestSupportDomainList xd added 20150702
-     */
+
     public void requestSupportDomainList() {
         Logger.d(TAG, "!--->requestSupportDomainList()----");
         String eventMsg =
@@ -1682,15 +1683,12 @@ public class WindowService extends Service {
         if (PackageUtil.isRunningForeground(WindowService.this)) {
             mSessionManager.showInitView(true);
         }
+
         if (!DeviceTool.isSdCardExist()) {
-            Logger.e(TAG, "!--->No SDCard mounted!");
-            mSessionManager.showInitFailedView(mContext
-                    .getString(R.string.error_init_msg_no_sdcard));
-            // Toast.makeText(mContext, mContext.getString(R.string.error_init_msg_no_sdcard),
-            // Toast.LENGTH_LONG).show();
+            mSessionManager.showInitFailedView(mContext.getString(R.string.error_init_msg_no_sdcard));
             return;
         }
-        /* XD added 20150706 end > */
+
         contactDataModel = new ContactDataModel(mContext);
         contactDataModel.setDataModelListener(mDataModelListener);
         contactDataModel.init();

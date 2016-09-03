@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2012-2015 Beijing Unisound Information Technology Co., Ltd. All right reserved.
- * 
+ *
  * @FileName : ContactsUtil.java
  * @ProjectName : uniCarSolution
  * @PakageName : com.unisound.unicar.gui.utils
@@ -35,7 +35,7 @@ import com.unisound.unicar.gui.model.ContactInfo;
 
 /**
  * Contacts Util
- * 
+ *
  * @author xiaodong
  * @date 20150707
  * @ModifyDate 2015-12-7
@@ -44,74 +44,19 @@ public class ContactsUtil {
 
     private static final String TAG = ContactsUtil.class.getSimpleName();
 
-    private static final String[] PROJECTION_CONTACTS = new String[] {
+    private static final String[] PROJECTION_CONTACTS = new String[]{
             ContactsContract.Contacts._ID, ContactsContract.Contacts.DISPLAY_NAME,
             ContactsContract.Contacts.PHOTO_ID, ContactsContract.Contacts.HAS_PHONE_NUMBER};
 
-    private static final String CONTACT_SELECT_ALL = Contacts.DISPLAY_NAME + " NOTNULL AND "
-            + Contacts.DISPLAY_NAME + " != '' ";
+    private static final String CONTACT_SELECT_ALL = Contacts.DISPLAY_NAME + " NOTNULL AND "+ Contacts.DISPLAY_NAME + " != '' ";
+
 
     private static ConcurrentHashMap<Integer, String> mExampleContactMap =
             new ConcurrentHashMap<Integer, String>();
 
-    /**
-     * get Default Contact Name when no contact find
-     * 
-     * @param context
-     * @return
-     */
-    // private static String getDefaultConatctName(Context context){
-    // boolean isNetworkConnect = Network.checkNetworkConnected(context);
-    // Logger.d(TAG, "!--->getDefaultConatctName--isNetworkConnect = " + isNetworkConnect);
-    // return isNetworkConnect ? context.getString(R.string.default_name_no_contact_online)
-    // : context.getString(R.string.default_name_no_contact_offline);
-    // }
-
-    /**
-     * has Contact With Name in db
-     * 
-     * @param ctx
-     * @return
-     */
-    // public static boolean hasContactWithName(Context ctx){
-    // boolean hasContactWithName = false;
-    // Map<Integer, String> contactMap = getContactMap(ctx);
-    // if (contactMap.size() > 0) {
-    // hasContactWithName = true;
-    // }
-    // return hasContactWithName;
-    // }
-
-    /**
-     * 
-     * @param context
-     * @param domainHelpText
-     * @return
-     */
-    // public static String getHelpTextWithContactName(Context context, String domainHelpText){
-    // String textShow = domainHelpText;
-    // String contactName = ContactsUtil.getRandomContactName(context);
-    //
-    // //if no contact find, use default name
-    // if ("".equals(contactName) || null == contactName) {
-    // contactName = getDefaultConatctName(context);
-    // }
-    //
-    // Object[] nameFormatParam = new Object[1];
-    // nameFormatParam[0] = contactName;
-    // try {
-    // textShow = String.format(domainHelpText, nameFormatParam);
-    // } catch (Exception e) {
-    // textShow = domainHelpText;
-    // Logger.w(TAG, "!--->String.format error! Text = "+domainHelpText);
-    // }
-    // Logger.d(TAG, "!--->contactName = "+contactName+"; textShow = "+textShow);
-    // return textShow;
-    // }
 
     /**
      * get a random Contact Name from Contact DB
-     * 
      * @param ctx
      * @return randomContactName or "" if no Contact Name find
      */
@@ -129,14 +74,14 @@ public class ContactsUtil {
         return name;
     }
 
+
     /**
-     * 
      * @param ctx
      * @param mContactSyncListener
      * @return "" if mExampleContactMap is empty
      */
     public static String getRandomContactName(final Context ctx,
-            final ContactAsyncListener mContactSyncListener) {
+                                              final ContactAsyncListener mContactSyncListener) {
         String name = "";
         Map<Integer, String> contactMap = getContactMap(ctx, mContactSyncListener);
         Integer[] keys = contactMap.keySet().toArray(new Integer[0]);
@@ -152,10 +97,10 @@ public class ContactsUtil {
 
     /**
      * update Contact Example Map
-     * 
+     *
+     * @param contactInfoList
      * @author xiaodong.he
      * @date 2015-12-7
-     * @param contactInfoList
      */
     public static void updateContactExampleMap(ArrayList<ContactInfo> contactInfoList) {
         if (contactInfoList == null || contactInfoList.size() <= 0) {
@@ -177,7 +122,7 @@ public class ContactsUtil {
     }
 
     /**
-     * 
+     *
      * @return mExampleContactMap
      */
     // public static ConcurrentHashMap<Integer, String> getmExampleContactMap() {
@@ -186,7 +131,7 @@ public class ContactsUtil {
 
     /**
      * get Contact Example Map
-     * 
+     *
      * @param ctx
      * @return
      */
@@ -196,12 +141,12 @@ public class ContactsUtil {
 
     /**
      * getContactMap: if mExampleContactMap is empty, then get ContactMa pAsync On Copfile
-     * 
-     * @author xiaodong.he
-     * @date 2015-12-07
+     *
      * @param ctx
      * @param listener
      * @return mExampleContactMap
+     * @author xiaodong.he
+     * @date 2015-12-07
      */
     public static Map<Integer, String> getContactMap(Context ctx, ContactAsyncListener listener) {
         if (mExampleContactMap.size() == 0) {
@@ -213,7 +158,7 @@ public class ContactsUtil {
     }
 
     /**
-     * 
+     *
      * @param ctx
      * @return
      */
@@ -263,11 +208,11 @@ public class ContactsUtil {
 
     /**
      * get Contact Map asynchronously On DataBase
-     * 
-     * @author xiaodong.he
-     * @date 2015-12-7
+     *
      * @param ctx
      * @param listener
+     * @author xiaodong.he
+     * @date 2015-12-7
      */
     public static void getContactMapAsyncOnDB(final Context ctx, final ContactAsyncListener listener) {
         Thread queryThread = new Thread() {
@@ -339,10 +284,10 @@ public class ContactsUtil {
 
     /**
      * get ContactMap asynchronously On Cop file
-     * 
+     *
+     * @param listener
      * @author xiaodong.he
      * @date 2015-12-7
-     * @param listener
      */
     public static void getContactMapAsyncOnCopfile(final ContactAsyncListener listener) {
         Thread queryThread = new Thread() {
@@ -408,7 +353,7 @@ public class ContactsUtil {
     }
 
     public static Cursor query(Context context, ContentResolver resolver, Uri uri,
-            String[] projection, String selection, String[] selectionArgs, String sortOrder) {
+                               String[] projection, String selection, String[] selectionArgs, String sortOrder) {
         try {
             return resolver.query(uri, projection, selection, selectionArgs, sortOrder);
         } catch (SQLiteException e) {
@@ -419,7 +364,7 @@ public class ContactsUtil {
 
     /**
      * get Contact Name By CONTACT_ID
-     * 
+     *
      * @param ctx
      * @param contactId
      * @return
@@ -468,7 +413,7 @@ public class ContactsUtil {
 
     /**
      * get Contact Name By NUMBER
-     * 
+     *
      * @param ctx
      * @param number
      * @return
@@ -484,11 +429,11 @@ public class ContactsUtil {
             cursor =
                     ctx.getContentResolver().query(
                             ContactsContract.CommonDataKinds.Phone.CONTENT_URI, projection, // Which
-                                                                                            // columns
-                                                                                            // to
-                                                                                            // return.
+                            // columns
+                            // to
+                            // return.
                             ContactsContract.CommonDataKinds.Phone.NUMBER + " = '" + number + "'", // WHERE
-                                                                                                   // clause.
+                            // clause.
                             null, // WHERE clause value substitution
                             null); // Sort order.
 
@@ -518,7 +463,6 @@ public class ContactsUtil {
     }
 
     /**
-     * 
      * @param ctx
      */
     public static void testReadAllContacts(Context ctx) {
@@ -587,7 +531,7 @@ public class ContactsUtil {
 
     /**
      * ContactAsyncListener
-     * 
+     *
      * @author xiaodong.he
      * @date 2015-12-07
      */

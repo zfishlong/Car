@@ -1,12 +1,3 @@
-/**
- * Copyright (c) 2012-2013 Yunzhisheng(Shanghai) Co.Ltd. All right reserved.
- * 
- * @FileName : PackageUtil.java
- * @ProjectName : Voizard
- * @PakageName : cn.yunzhisheng.voizard.utils
- * @Author : Brant
- * @CreateDate : 2013-5-29
- */
 package com.unisound.unicar.gui.utils;
 
 import java.util.ArrayList;
@@ -24,19 +15,12 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.text.TextUtils;
 
-/**
- * @Module : 隶属模块名
- * @Comments : 描述
- * @Author : Brant
- * @CreateDate : 2013-5-29
- * @ModifiedBy : Brant
- * @ModifiedDate: 2013-5-29
- * @Modified: 2013-5-29: 实现基本功能
- */
 public class PackageUtil {
+
     @SuppressWarnings("unused")
     private static final String TAG = "PackageUtil";
 
+    //获取桌面上的Packages
     public static List<String> getLauncherPackages(Context context) {
         List<String> packages = new ArrayList<String>();
         PackageManager packageManager = context.getPackageManager();
@@ -50,6 +34,7 @@ public class PackageUtil {
         return packages;
     }
 
+    //获取 当前的任务
     public static String getCurrentTasks(Context context) {
         String currentTask = "";
         ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
@@ -61,9 +46,10 @@ public class PackageUtil {
         return currentTask;
     }
 
+
+    //是否 在home界面
     public static boolean isHome(Context context, List<String> launchers) {
-        ActivityManager activityManager =
-                (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        ActivityManager activityManager =(ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
         if (activityManager != null) {
             List<RunningTaskInfo> rti = activityManager.getRunningTasks(1);
             if (launchers != null && launchers.size() > 0 && rti != null && rti.size() > 0) {
@@ -76,6 +62,8 @@ public class PackageUtil {
         }
     }
 
+
+    //获取app的版本名称
     public static String getAppVersionName(Context context) {
         try {
             PackageInfo packageInfo =
@@ -88,6 +76,8 @@ public class PackageUtil {
         return "";
     }
 
+
+    //获取app的版本号
     public static int getAppVersionCode(Context context) {
         try {
             PackageInfo packageInfo =
@@ -96,7 +86,6 @@ public class PackageUtil {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return -1;
     }
 
@@ -135,8 +124,6 @@ public class PackageUtil {
             return false;
         }
         String topActivityClassName = getTopActivityName(context);
-        // Logger.d(TAG,
-        // "isAppRunningForeground---topActivityClassName = "+topActivityClassName);
         if (topActivityClassName != null && topActivityClassName.startsWith(packageName)) {
             return true;
         } else {
@@ -146,11 +133,6 @@ public class PackageUtil {
 
     /**
      * is App Running
-     * 
-     * @author xiaodong.he
-     * @param context
-     * @param packageName
-     * @return
      */
     public static boolean isAppRunning(Context context, String packageName) {
         boolean isAppRunning = false;
@@ -168,12 +150,7 @@ public class PackageUtil {
     }
 
     /**
-     * 
-     * @author xiaodong.he
-     * @date 20160310
-     * @param context
-     * @param packageName
-     * @return
+     * app是否在运行
      */
     public static boolean isAppRunning2(Context context, String packageName) {
         ActivityManager mActivityManager =
@@ -192,14 +169,11 @@ public class PackageUtil {
 
     /**
      * is Need hide Float View XD added 20150810
-     * 
      * @param context
      * @return
      */
     public static boolean isNeedHideFloatView(Context context) {
         String topActivityClassName = getTopActivityName(context);
-        // Logger.d(TAG,
-        // "!--->----isNeedHideFloatView-------topActivityClassName = "+topActivityClassName);
         if (topActivityClassName != null
                 && (topActivityClassName.startsWith("com.unisound.unicar.gui")
                         || topActivityClassName.startsWith("com.android.phone")
@@ -210,12 +184,6 @@ public class PackageUtil {
             return false;
         }
     }
-
-    // public final static boolean isScreenLocked(Context c) {
-    // KeyguardManager mKeyguardManager = (KeyguardManager)
-    // c.getSystemService(Context.KEYGUARD_SERVICE);
-    // return !mKeyguardManager.inKeyguardRestrictedInputMode();
-    // }
 
     /**
      * add by ch 判断是否安装了某个apk 参数：包名

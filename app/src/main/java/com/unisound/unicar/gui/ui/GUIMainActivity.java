@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2012-2015 Beijing Unisound Information Technology Co., Ltd. All right reserved.
- * 
+ *
  * @FileName : GUIMainActivity.java
  * @ProjectName : uniCarGUI
  * @PakageName : com.unisound.unicar.gui.ui
@@ -63,7 +63,7 @@ import com.unisound.unicar.gui.view.MainMenuPopupWindow.MainMenuClickListener;
 
 /**
  * GUIMainActivity for UI3
- * 
+ *
  * @author xiaodong.he
  * @date 2015-12-04
  */
@@ -76,11 +76,15 @@ public class GUIMainActivity extends Activity implements OnClickListener {
 
     private ImageView startSpeak;
 
-    /** Help Text Layout wake up close */
+    /**
+     * Help Text Layout wake up close
+     */
     private LinearLayout mLayoutHelpTextAuto;
     private AutoTextView mAutoTextView;
 
-    /** Help Text Layout wake up open */
+    /**
+     * Help Text Layout wake up open
+     */
     private LinearLayout mLayoutHelpTextWakeupOpen;
     private TextView mTvWakeupHelpText;
     private ImageView mIvEditWakeupword;
@@ -113,7 +117,6 @@ public class GUIMainActivity extends Activity implements OnClickListener {
     private TextView mTvHelpTextMusic;
     private TextView mTvHelpTextLocalSearch;
     private IntentFilter mPsuhFilter;
-
 
 
     @Override
@@ -161,7 +164,6 @@ public class GUIMainActivity extends Activity implements OnClickListener {
     }
 
 
-
     /**
      * 初始化头部
      */
@@ -190,6 +192,44 @@ public class GUIMainActivity extends Activity implements OnClickListener {
         mIvConnectMobie.setOnClickListener(mOnClickListener);
     }
 
+
+    //初始化各种View  设置。
+    private void initView() {
+        mIvMenuMore = (ImageView) findViewById(R.id.iv_main_menu_more);
+        mIvPushNoRead = (ImageView) findViewById(R.id.push_no_read_icon);
+        mMainIconsLayout = (LinearLayout) findViewById(R.id.layout_main_icons);
+
+        FrameLayout navigationLayout = (FrameLayout) findViewById(R.id.main_layout_navigation);     //导航
+        FrameLayout callLayout = (FrameLayout) findViewById(R.id.main_layout_call);                 //打电话
+        FrameLayout musicLayout = (FrameLayout) findViewById(R.id.main_layout_music);               //音乐
+        FrameLayout localsearchLayout = (FrameLayout) findViewById(R.id.main_layout_localsearch);   //查找周边
+
+        int btnWith = DeviceTool.getScreenHight(mContext) / 2;     //按钮占屏幕的一半
+
+        navigationLayout.setLayoutParams(new android.widget.LinearLayout.LayoutParams(btnWith,
+                btnWith));
+        callLayout.setLayoutParams(new android.widget.LinearLayout.LayoutParams(btnWith, btnWith));
+        musicLayout.setLayoutParams(new android.widget.LinearLayout.LayoutParams(btnWith, btnWith));
+        localsearchLayout.setLayoutParams(new android.widget.LinearLayout.LayoutParams(btnWith,
+                btnWith));
+
+
+        mIvMenuMore.setOnClickListener(mOnClickListener);                     //菜单点击事件
+        callLayout.setOnClickListener(mOnClickListener);                      //打电话的点击事件
+        navigationLayout.setOnClickListener(mOnClickListener);                //导航的点击事件
+        musicLayout.setOnClickListener(mOnClickListener);                     //音乐的点击事件
+        localsearchLayout.setOnClickListener(mOnClickListener);               //查找周边的点击事件
+
+
+        mTvHelpTextCall = (TextView) findViewById(R.id.tv_help_text_call);    //里面显示的文字
+        mTvHelpTextPoi = (TextView) findViewById(R.id.tv_help_text_poi);
+        mTvHelpTextMusic = (TextView) findViewById(R.id.tv_help_text_music);
+        mTvHelpTextLocalSearch = (TextView) findViewById(R.id.tv_help_text_local_search);
+
+
+        boolean isOnline = Network.isNetworkConnected(mContext);              //根据是否有网络显示不同的文字
+        updateDomainButtonHelpText(isOnline);
+    }
 
 
     //推送接受器
@@ -227,16 +267,12 @@ public class GUIMainActivity extends Activity implements OnClickListener {
         }
     }
 
-    /**
-     * 开启一个服务
-     */
+    //开启一个服务
     private void startWindowService() {
         Intent i = new Intent(this, WindowService.class);
         i.setAction(WindowService.ACTION_START_REQUEST_MAKE_FINISHED);
         startService(i);
     }
-
-
 
     @Override
     public void onClick(View v) {
@@ -281,7 +317,6 @@ public class GUIMainActivity extends Activity implements OnClickListener {
         startService(intent);
     }
 
-
     //开启酷我音乐
     private void startKWMusic() {
         MessageSender messageSender = new MessageSender(mContext);
@@ -304,15 +339,11 @@ public class GUIMainActivity extends Activity implements OnClickListener {
     //编辑唤醒词的对话框
     private EditWakeupWordPopWindow pop;
 
-
-    /**
-     * 显示一个唤醒词的对话框
-     */
+    //显示一个唤醒词的对话框
     private void showEditWakeupwordPopWindow(Context context) {
         pop = new EditWakeupWordPopWindow(context);
         pop.showPopWindow(mMainIconsLayout);
     }
-
 
     //点击事件的处理
     private OnClickListener mOnClickListener = new OnClickListener() {
@@ -327,7 +358,7 @@ public class GUIMainActivity extends Activity implements OnClickListener {
                     showEditWakeupwordPopWindow(mContext);
                     break;
                 case R.id.iv_connect_mobie:                 //连接汽车
-                    Intent connectIntent =new Intent(GUIMainActivity.this, MobileConnectionActivity.class);
+                    Intent connectIntent = new Intent(GUIMainActivity.this, MobileConnectionActivity.class);
                     startActivity(connectIntent);
                     break;
                 case R.id.main_layout_call:                 //打电话
@@ -354,61 +385,17 @@ public class GUIMainActivity extends Activity implements OnClickListener {
         }
     };
 
-    /**
-     * @author xiaodong.he
-     */
+    //点击导航按钮
     private void onClickNavi() {
-        if (UniCarNaviUtil.isUniCarNaviEnable(mContext)) {
-            Logger.d("onClickNavi UniCarNavi is Enable.");
-            UniCarNaviUtil.sendShowNaviUIAction(mContext);
+        if (UniCarNaviUtil.isUniCarNaviEnable(mContext)) {  //汽车导航是否可用
+            UniCarNaviUtil.sendShowNaviUIAction(mContext);  //开启导航
         } else {
-            startNavigation();
+            startNavigation();      //不可用则开启-->汽车导航
         }
     }
 
-    /**
-     *  初始化各种View  设置。
-     */
-    private void initView() {
-        mIvMenuMore = (ImageView) findViewById(R.id.iv_main_menu_more);
-        mIvPushNoRead = (ImageView) findViewById(R.id.push_no_read_icon);
-        mMainIconsLayout = (LinearLayout) findViewById(R.id.layout_main_icons);
 
-        FrameLayout navigationLayout = (FrameLayout) findViewById(R.id.main_layout_navigation);     //导航
-        FrameLayout callLayout = (FrameLayout) findViewById(R.id.main_layout_call);                 //打电话
-        FrameLayout musicLayout = (FrameLayout) findViewById(R.id.main_layout_music);               //音乐
-        FrameLayout localsearchLayout = (FrameLayout) findViewById(R.id.main_layout_localsearch);   //查找周边
-
-        int btnWith = DeviceTool.getScreenHight(mContext) / 2;     //按钮占屏幕的一半
-
-        navigationLayout.setLayoutParams(new android.widget.LinearLayout.LayoutParams(btnWith,
-                btnWith));
-        callLayout.setLayoutParams(new android.widget.LinearLayout.LayoutParams(btnWith, btnWith));
-        musicLayout.setLayoutParams(new android.widget.LinearLayout.LayoutParams(btnWith, btnWith));
-        localsearchLayout.setLayoutParams(new android.widget.LinearLayout.LayoutParams(btnWith,
-                btnWith));
-
-
-        mIvMenuMore.setOnClickListener(mOnClickListener);                     //菜单点击事件
-        callLayout.setOnClickListener(mOnClickListener);                      //打电话的点击事件
-        navigationLayout.setOnClickListener(mOnClickListener);                //导航的点击事件
-        musicLayout.setOnClickListener(mOnClickListener);                     //音乐的点击事件
-        localsearchLayout.setOnClickListener(mOnClickListener);               //查找周边的点击事件
-
-
-        mTvHelpTextCall = (TextView) findViewById(R.id.tv_help_text_call);    //里面显示的文字
-        mTvHelpTextPoi = (TextView) findViewById(R.id.tv_help_text_poi);
-        mTvHelpTextMusic = (TextView) findViewById(R.id.tv_help_text_music);
-        mTvHelpTextLocalSearch = (TextView) findViewById(R.id.tv_help_text_local_search);
-
-
-        boolean isOnline = Network.isNetworkConnected(mContext);              //根据是否有网络显示不同的文字
-        updateDomainButtonHelpText(isOnline);
-    }
-
-    /**
-     * showMenu
-     */
+    //显示菜单
     private void showMenu() {
         MainMenuPopupWindow mMenuPop = new MainMenuPopupWindow(mContext);    //显示一个popupWindow
         mMenuPop.setMainMenuClickListener(mMainMenuClickListener);
@@ -417,7 +404,7 @@ public class GUIMainActivity extends Activity implements OnClickListener {
 
 
     /**
-     *  主界面菜单的点击事件
+     * 主界面菜单的点击事件
      */
     private MainMenuClickListener mMainMenuClickListener = new MainMenuClickListener() {
 
@@ -429,7 +416,7 @@ public class GUIMainActivity extends Activity implements OnClickListener {
 
         @Override
         public void onSetingClick() {                                       //设置界面的点击事件
-            Intent settingIntent =new Intent(GUIMainActivity.this, SettingsViewPagerActivity.class);
+            Intent settingIntent = new Intent(GUIMainActivity.this, SettingsViewPagerActivity.class);
             startActivity(settingIntent);
         }
 
@@ -441,24 +428,20 @@ public class GUIMainActivity extends Activity implements OnClickListener {
         }
 
 
-
     };
 
 
-    /**
-	 * GUIMainActivity 销毁时的方法
-	 */
+    //GUIMainActivity 销毁时的方法
     BroadcastReceiver mFinishReceiver = new BroadcastReceiver() {
 
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
 
-            if (ACTION_FINISH_GUIMAINACTIVITY.equals(action)) {   //销毁
+            if (ACTION_FINISH_GUIMAINACTIVITY.equals(action)) {                 //销毁
                 GUIMainActivity.this.finish();
 
             } else if (GUIConfig.ACTION_ON_CONTACT_DATA_DONE.equals(action)) {   //没有数据
-
                 boolean isNetworkConnected = Network.isNetworkConnected(mContext);
                 if (isNetworkConnected) {
                     updateMainCallHelpText(true);
@@ -470,58 +453,46 @@ public class GUIMainActivity extends Activity implements OnClickListener {
 
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
-        // TODO Auto-generated method stub
-        Logger.d(TAG, "!--->dispatchKeyEvent()-------getKeyCode =" + event.getKeyCode());
         if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
-            // this.finish();
+            this.finish();  //返回
         }
         return super.dispatchKeyEvent(event);
     }
 
+
+    //界面获得焦点时的事件
     @Override
     protected void onResume() {
         super.onResume();
-        Logger.d(TAG, "!--->onResume...");
         if (mContext == null) {
             mContext = getApplicationContext();
-            Logger.d(TAG, "mContext = " + mContext);
         }
         updateMainTopHelpText();
         refershPushNoRead();
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Logger.d(TAG, "!--->onPause...");
-
-    }
 
     /* < xiaodong.he 20151019 added for Help Text Begin */
-    private OnSharedPreferenceChangeListener mPreferenceChangeListener =
-            new OnSharedPreferenceChangeListener() {
+    private OnSharedPreferenceChangeListener mPreferenceChangeListener = new OnSharedPreferenceChangeListener() {
 
-                @Override
-                public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,
-                        String key) {
-                    Logger.d(TAG, "!--->onSharedPreferenceChanged: key " + key);
-                    if (UserPerferenceUtil.KEY_ENABLE_WAKEUP.equals(key)) {
-                        // do updateMainTopHelpText(); 100ms delay
-                        // mUIHandler.sendEmptyMessageDelayed(MSG_UPDATE_MAIN_TOP_HELP_TEXT,
-                        // TIME_UPDATE_MAIN_TOP_HELP_TEXT_DELAY);
-                    } else if (UserPerferenceUtil.KEY_WAKEUP_WORDS.equals(key)) {
-                        boolean isWakeUpOpen = UserPerferenceUtil.isWakeupEnable(mContext);
-                        if (isWakeUpOpen && null != mTvWakeupHelpText) {
-                            mTvWakeupHelpText.setText(FunctionHelpUtil
-                                    .addDoubleQuotationMarks(UserPerferenceUtil
-                                            .getWakeupWord(mContext)));
-                        }
-                    }
+        @Override
+        public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+
+            Logger.d(TAG, "!--->onSharedPreferenceChanged: key " + key);
+            if (UserPerferenceUtil.KEY_ENABLE_WAKEUP.equals(key)) {
+
+            } else if (UserPerferenceUtil.KEY_WAKEUP_WORDS.equals(key)) {
+                boolean isWakeUpOpen = UserPerferenceUtil.isWakeupEnable(mContext);
+                if (isWakeUpOpen && null != mTvWakeupHelpText) {
+                    mTvWakeupHelpText.setText(FunctionHelpUtil
+                            .addDoubleQuotationMarks(UserPerferenceUtil
+                                    .getWakeupWord(mContext)));
                 }
-            };
+            }
+        }
+    };
 
     /**
-     * 
      * @param mContext
      */
     private void updateMainTopHelpText() {
@@ -546,11 +517,8 @@ public class GUIMainActivity extends Activity implements OnClickListener {
         }
     }
 
-    /**
-     * 
-     */
+    //显示帮助文本
     private void showAutoHelpTextView() {
-        Logger.d(TAG, "showAutoHelpTextView-----");
         mLayoutHelpTextWakeupOpen.setVisibility(View.GONE);
         mLayoutHelpTextAuto.setVisibility(View.VISIBLE);
         updateAutoHelpText(Network.isNetworkConnected(mContext));
@@ -558,7 +526,7 @@ public class GUIMainActivity extends Activity implements OnClickListener {
 
     /**
      * update Domain Button Help Text
-     * 
+     *
      * @param isOnline
      */
     private void updateDomainButtonHelpText(boolean isOnline) {
@@ -575,23 +543,12 @@ public class GUIMainActivity extends Activity implements OnClickListener {
         }
     }
 
-    /**
-     * update Main Call HelpText & do not query again when no contact find
-     * 
-     * @param isOnline
-     */
+
     private void updateMainCallHelpText(boolean isOnline) {
         updateMainCallHelpText(isOnline, null);
     }
 
-    /**
-     * updateMainCallHelpText
-     * 
-     * @date 2015-12-7
-     * @param isOnline
-     * @param listener, null : do not query again when no contact find; if not null, query again
-     *        when no contact find
-     */
+
     private void updateMainCallHelpText(boolean isOnline, ContactsUtil.ContactAsyncListener listener) {
         if (null != mTvHelpTextCall) {
             String helpText =
@@ -602,50 +559,43 @@ public class GUIMainActivity extends Activity implements OnClickListener {
         }
     }
 
+
+
     /**
      * mContactSyncListener
-     * 
-     * @author xiaodong.he
-     * @date 2015-12-7
+     * 联系人-->同步
      */
-    private ContactsUtil.ContactAsyncListener mContactSyncListener =
-            new ContactsUtil.ContactAsyncListener() {
+    private ContactsUtil.ContactAsyncListener mContactSyncListener = new ContactsUtil.ContactAsyncListener() {
 
-                @Override
-                public void onQueryCompleted(ConcurrentHashMap<Integer, String> contactMap) {
-                    if (contactMap != null && contactMap.size() > 0) {
-                        Logger.d(TAG, "onQueryCompleted, size = " + contactMap.size()
-                                + " begin update call help text again.");
-                        mUIHandler.sendEmptyMessage(MSG_UPDATE_MAIN_CALL_HELP_TEXT);
-                    }
-                }
+        @Override
+        public void onQueryCompleted(ConcurrentHashMap<Integer, String> contactMap) {
+            if (contactMap != null && contactMap.size() > 0) {
+                mUIHandler.sendEmptyMessage(MSG_UPDATE_MAIN_CALL_HELP_TEXT);
+            }
+        }
 
-                @Override
-                public void onQueryError() {
-                    Logger.d(TAG, "onQueryError");
-                }
-            };
-    /* xiaodong.he 20151019 added for Help Text End > */
+        @Override
+        public void onQueryError() {
+        }
+    };
 
-    /* < XiaodDong 20150721 added for Auto Help Text Begin */
+
     private Handler mUIHandler = new Handler() {
         public void handleMessage(android.os.Message msg) {
             switch (msg.what) {
                 case MSG_UPDATE_AUTO_TEXT_VIEW:
                     String text = (String) msg.obj;
-                    // Logger.d(TAG, "!--->MSG_UPDATE_AUTO_TEXT_VIEW---text = "+text);
                     if (null != mAutoTextView) {
                         mAutoTextView.setText(text);
                     }
                     break;
                 case MSG_UPDATE_MAIN_TOP_HELP_TEXT:
-                    Logger.d(TAG, "MSG_UPDATE_MAIN_TOP_HELP_TEXT");
                     updateMainTopHelpText();
                     break;
+
                 case MSG_UPDATE_MAIN_CALL_HELP_TEXT:
                     boolean isNetworkContected = Network.isNetworkConnected(mContext);
-                    Logger.d(TAG, "MSG_UPDATE_MAIN_CALL_HELP_TEXT again--isNetworkContected:"
-                            + isNetworkContected);
+
                     if (isNetworkContected) {
                         updateMainCallHelpText(true);
                     }
@@ -653,13 +603,15 @@ public class GUIMainActivity extends Activity implements OnClickListener {
                 default:
                     break;
             }
-        };
+        }
+
+        ;
     };
 
 
     /**
      * update Help Text
-     * 
+     *
      * @param isConnected
      */
     private void updateAutoHelpText(boolean isConnected) {
@@ -687,7 +639,7 @@ public class GUIMainActivity extends Activity implements OnClickListener {
                 boolean isConnected = Network.isNetworkConnected(mContext);
                 boolean isWakeUpOpen = UserPerferenceUtil.isWakeupEnable(mContext);      //唤醒功能是否打开
 
-                Logger.d(TAG, "!--->mNetworkStateReceiver--onReceive--isConnected:" + isConnected+ "; isWakeUpOpen = " + isWakeUpOpen);
+                Logger.d(TAG, "!--->mNetworkStateReceiver--onReceive--isConnected:" + isConnected + "; isWakeUpOpen = " + isWakeUpOpen);
 
                 if (!isWakeUpOpen) {
                     updateAutoHelpText(isConnected);
@@ -702,10 +654,10 @@ public class GUIMainActivity extends Activity implements OnClickListener {
 
     /**
      * updateEditWakeupWordView
-     * 
+     *
+     * @param isConnected
      * @author xiaodong.he
      * @date 2015-12-14
-     * @param isConnected
      */
     private void updateEditWakeupWordView(boolean isConnected) {
         if (null == mIvEditWakeupword || null == mTvWakeupHelpText) {
@@ -714,13 +666,9 @@ public class GUIMainActivity extends Activity implements OnClickListener {
         if (!GUIConfig.isSupportUpdateWakeupWordSetting) {
             return;
         }
-        Logger.d(TAG, "updateEditWakeupWordView---isConnected = " + isConnected);
         if (isConnected) {
             mIvEditWakeupword.setVisibility(View.VISIBLE);
             mIvEditWakeupword.setOnClickListener(mOnClickListener);
-
-            // mTvWakeupHelpText.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG);// 下划线
-            // mTvWakeupHelpText.getPaint().setAntiAlias(true); // 抗锯齿
             mTvWakeupHelpText.setOnClickListener(mOnClickListener);
         } else {
             mIvEditWakeupword.setVisibility(View.GONE);
@@ -758,6 +706,8 @@ public class GUIMainActivity extends Activity implements OnClickListener {
         unregistPushReceiver();
     }
 
+
+    //唤醒词改变的事件   把popupWindow的消失掉
     BroadcastReceiver receiver = new BroadcastReceiver() {
 
         @Override

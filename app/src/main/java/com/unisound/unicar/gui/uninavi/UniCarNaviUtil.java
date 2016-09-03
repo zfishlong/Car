@@ -58,17 +58,15 @@ public class UniCarNaviUtil {
     }
 
     /**
-     * 
-     * @author xiaodong.he
+     * 汽车导航是否可用
      * @param context
      * @return
      */
     public static boolean isUniCarNaviEnable(Context context) {
-        boolean isUniCarNaviAppRuning =
-                PackageUtil.isAppRunning2(context, GUIConfig.PACKAGE_NAME_UNICAR_NAVI);
+
+        boolean isUniCarNaviAppRuning =PackageUtil.isAppRunning2(context, GUIConfig.PACKAGE_NAME_UNICAR_NAVI);
         boolean isUniCarNaviWorking = isUniCarNaviWorking();
-        Logger.d("isUniCarNaviAppRuning:" + isUniCarNaviAppRuning + "; isUniCarNaviWorking: "
-                + isUniCarNaviWorking);
+
         if (!isUniCarNaviAppRuning
                 && UniCarNaviUtil.getUniCarNaviStatus() != UniCarNaviConstant.CallbackConstant.APP_STATE_IDEL) {
             setUniCarNaviStatus(UniCarNaviConstant.CallbackConstant.APP_STATE_IDEL);
