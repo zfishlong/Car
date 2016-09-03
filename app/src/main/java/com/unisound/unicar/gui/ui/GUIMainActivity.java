@@ -90,6 +90,7 @@ public class GUIMainActivity extends Activity implements OnClickListener {
 
     private LayoutInflater mLayoutInflater;
 
+    //ManiActivty关闭广播
     public static final String ACTION_FINISH_GUIMAINACTIVITY =
             "com.unisound.unicar.gui.ACTION_FINISH_GUIMAINACTIVITY";
 
@@ -104,13 +105,13 @@ public class GUIMainActivity extends Activity implements OnClickListener {
 
     private ArrayList<String> mHelpTextList = new ArrayList<String>();
     private AutoHelpTextUpdateUtil mHelpTextUpdateMgr = null;
+
     private ImageView mIvMenuMore;
     private ImageView mIvPushNoRead;
     private TextView mTvHelpTextCall;
     private TextView mTvHelpTextPoi;
     private TextView mTvHelpTextMusic;
     private TextView mTvHelpTextLocalSearch;
-
     private IntentFilter mPsuhFilter;
 
 
@@ -123,9 +124,9 @@ public class GUIMainActivity extends Activity implements OnClickListener {
 
         setContentView(R.layout.activity_main);
         mLayoutInflater = getLayoutInflater();
-        mContext = getApplicationContext();
+        mContext = getApplicationContext();                 //获取整个应用的上下文
 
-        initMainHeadView();   // XD added 20150722          //初始化各种点击事件
+        initMainHeadView();                                   //初始化各种点击事件
 
         initView();
 
@@ -134,15 +135,16 @@ public class GUIMainActivity extends Activity implements OnClickListener {
         startWindowService();                   //开启了一个服务   most Important
 
 
-        //注册一个广播
+        //注册界面销毁的广播
         IntentFilter filter = new IntentFilter(ACTION_FINISH_GUIMAINACTIVITY);
         filter.addAction(GUIConfig.ACTION_ON_CONTACT_DATA_DONE);
         registerReceiver(mFinishReceiver, filter);
 
-        //监听网络的事件
+        //监听网络的事件-->连接上网络的事件
         IntentFilter networkFilter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
         registerReceiver(mNetworkStateReceiver, networkFilter);
 
+        //注册临时文件发生改变时的广播
         UserPerferenceUtil.registerOnSharedPreferenceChangeListener(mContext, mPreferenceChangeListener);
 
         //注册唤醒的广播
@@ -182,7 +184,6 @@ public class GUIMainActivity extends Activity implements OnClickListener {
             mIvEditWakeupword.setOnClickListener(mOnClickListener);
             mIvEditWakeupword.setVisibility(View.VISIBLE);
         } else {
-
             mIvEditWakeupword.setVisibility(View.GONE);
         }
 
@@ -206,7 +207,6 @@ public class GUIMainActivity extends Activity implements OnClickListener {
     //注册通知信息
     private void registPushReceiver() {
         if (mPsuhFilter == null) {
-                                                // 注册push的广播
             mPsuhFilter = new IntentFilter();
             mPsuhFilter.addAction(PushDb.PushDbUpdate);
             this.registerReceiver(pushReceiver, mPsuhFilter);
@@ -258,30 +258,32 @@ public class GUIMainActivity extends Activity implements OnClickListener {
         startService(intent);
     }
 
-    private void startCallOut() {
-        Logger.d(TAG, "!--->startCallOut----");
 
+    //开始打电话
+    private void startCallOut() {
         Intent intent = new Intent(this, WindowService.class);
         intent.setAction(MessageReceiver.ACTION_START_CALL_OUT);
         startService(intent);
     }
 
+
+    //开始导航
     private void startNavigation() {
-        Logger.d(TAG, "!--->startNavigation----");
         Intent intent = new Intent(this, WindowService.class);
         intent.setAction(MessageReceiver.ACTION_START_NAVIGATION);
         startService(intent);
     }
 
+    //开启音乐
     private void startMusic() {
-        Logger.d(TAG, "!--->startMusic----");
         Intent intent = new Intent(this, WindowService.class);
         intent.setAction(MessageReceiver.ACTION_START_MUSIC);
         startService(intent);
     }
 
+
+    //开启酷我音乐
     private void startKWMusic() {
-        Logger.d(TAG, "startKWMusic-----");
         MessageSender messageSender = new MessageSender(mContext);
         Intent musicIntent = new Intent(CommandPreference.ACTION_MUSIC_DATA);
         Bundle bundle = new Bundle();
@@ -292,30 +294,24 @@ public class GUIMainActivity extends Activity implements OnClickListener {
     }
 
 
+    //开始定位查找
     private void startLocalSearch() {
-        Logger.d(TAG, "!--->startLocalSearch----");
         Intent intent = new Intent(this, WindowService.class);
         intent.setAction(MessageReceiver.ACTION_START_LOCAL_SEARCH);
         startService(intent);
     }
 
+    //编辑唤醒词的对话框
     private EditWakeupWordPopWindow pop;
 
+
     /**
-     * show Edit Wakeupword PopWindow
-     * 
-     * @author xiaodong.he
-     * @date 2015-11-01
-     * @param context
+     * 显示一个唤醒词的对话框
      */
     private void showEditWakeupwordPopWindow(Context context) {
-        Logger.d(TAG, "showEditWakeupwordPopWindow----");
         pop = new EditWakeupWordPopWindow(context);
         pop.showPopWindow(mMainIconsLayout);
     }
-
-
-
 
 
     //点击事件的处理
@@ -338,8 +334,8 @@ public class GUIMainActivity extends Activity implements OnClickListener {
                     startCallOut();
                     break;
                 case R.id.main_layout_music:                // 播放音乐
-                    //startMusic(); 打开系统的可以播放音乐的程序
-                    startKWMusic(); // XD modify 20151020
+                    //startMusic();                         // 打开系统的可以播放音乐的程序
+                    startKWMusic();                         //打开酷我音乐
                     break;
                 case R.id.main_layout_navigation:           //导航
                     onClickNavi();
@@ -350,8 +346,10 @@ public class GUIMainActivity extends Activity implements OnClickListener {
                 case R.id.iv_main_menu_more:                //显示菜单
                     showMenu();
                     break;
+
                 default:
                     break;
+
             }
         }
     };
@@ -448,24 +446,24 @@ public class GUIMainActivity extends Activity implements OnClickListener {
 
 
     /**
-	 * 
+	 * GUIMainActivity 销毁时的方法
 	 */
     BroadcastReceiver mFinishReceiver = new BroadcastReceiver() {
 
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
-            Logger.d(TAG, "!--->mFinishReceiver action = " + action);
-            if (ACTION_FINISH_GUIMAINACTIVITY.equals(action)) {
-                // startMainActivity(); //xd delete 20150706
+
+            if (ACTION_FINISH_GUIMAINACTIVITY.equals(action)) {   //销毁
                 GUIMainActivity.this.finish();
-            } else if (GUIConfig.ACTION_ON_CONTACT_DATA_DONE.equals(action)) {
+
+            } else if (GUIConfig.ACTION_ON_CONTACT_DATA_DONE.equals(action)) {   //没有数据
+
                 boolean isNetworkConnected = Network.isNetworkConnected(mContext);
-                Logger.d(TAG, "onReceive---ACTION_ON_CONTACT_DATA_DONE. isNetworkConnected = "
-                        + isNetworkConnected);
                 if (isNetworkConnected) {
                     updateMainCallHelpText(true);
                 }
+
             }
         }
     };
@@ -679,23 +677,23 @@ public class GUIMainActivity extends Activity implements OnClickListener {
     }
 
     /**
-     * 
+     * 监听网络的接收器
      */
     private BroadcastReceiver mNetworkStateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
+
             if (ConnectivityManager.CONNECTIVITY_ACTION.equals(intent.getAction())) {
                 boolean isConnected = Network.isNetworkConnected(mContext);
-                boolean isWakeUpOpen = UserPerferenceUtil.isWakeupEnable(mContext);
-                Logger.d(TAG, "!--->mNetworkStateReceiver--onReceive--isConnected:" + isConnected
-                        + "; isWakeUpOpen = " + isWakeUpOpen);
+                boolean isWakeUpOpen = UserPerferenceUtil.isWakeupEnable(mContext);      //唤醒功能是否打开
+
+                Logger.d(TAG, "!--->mNetworkStateReceiver--onReceive--isConnected:" + isConnected+ "; isWakeUpOpen = " + isWakeUpOpen);
+
                 if (!isWakeUpOpen) {
                     updateAutoHelpText(isConnected);
                 }
-
-                updateDomainButtonHelpText(isConnected);// XD added 20151019
-
-                updateEditWakeupWordView(isConnected); // XD added 20151214
+                updateDomainButtonHelpText(isConnected);    // 更新控制按钮的文字
+                updateEditWakeupWordView(isConnected);      // 更新编辑唤醒词的对话框的文字
             }
         }
     };

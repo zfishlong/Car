@@ -100,11 +100,13 @@ public class PackageUtil {
         return -1;
     }
 
+    /**
+     * 获取当前的栈顶的activity
+     */
     public static String getTopActivityName(Context context) {
         String topActivityClassName = null;
-        ActivityManager activityManager =
-                (ActivityManager) (context
-                        .getSystemService(android.content.Context.ACTIVITY_SERVICE));
+        ActivityManager activityManager =(ActivityManager) (context.getSystemService(android.content.Context.ACTIVITY_SERVICE));
+
         List<RunningTaskInfo> runningTaskInfos = activityManager.getRunningTasks(1);
         if (runningTaskInfos != null) {
             ComponentName f = runningTaskInfos.get(0).topActivity;
@@ -114,17 +116,11 @@ public class PackageUtil {
     }
 
     /**
-     * is Unicar GUI Running Foreground
-     * 
-     * @param context
-     * @return
+     * 应用是否运行在前台
      */
     public static boolean isRunningForeground(Context context) {
         String topActivityClassName = getTopActivityName(context);
-        // Logger.d(TAG,
-        // "!--->----isRunningForeground()-------topActivityClassName = "+topActivityClassName);
-        if (topActivityClassName != null
-                && topActivityClassName.startsWith("com.unisound.unicar.gui")) {
+        if (topActivityClassName != null&& topActivityClassName.startsWith("com.unisound.unicar.gui")) {
             return true;
         } else {
             return false;
@@ -132,12 +128,7 @@ public class PackageUtil {
     }
 
     /**
-     * is App Running Foreground
-     * 
-     * @author xiaodong.he
-     * @param context
-     * @param packageName
-     * @return
+     * 应用是否运行在前台
      */
     public static boolean isAppRunningForeground(Context context, String packageName) {
         if (TextUtils.isEmpty(packageName)) {

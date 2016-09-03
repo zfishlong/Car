@@ -52,7 +52,6 @@ public class KWMusicService extends Service implements OnSearchListener {
         public void handleMessage(android.os.Message msg) {
             switch (msg.what) {
                 case MSG_PAUSE:
-
                     setPlayState(KWPlayState.STATE_PAUSE);
                     break;
                 case MSG_PLAY:

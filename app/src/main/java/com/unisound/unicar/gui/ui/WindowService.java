@@ -122,56 +122,43 @@ import com.unisound.unicar.gui.view.SessionLinearLayout;
 import com.unisound.unicar.gui.view.SessionLinearLayout.DispatchKeyEventListener;
 import com.unisound.unicar.gui.view.SessionLinearLayout.OnTouchEventListener;
 
-/**
- * @Module :
- * @Comments :
- * @Author : Brant
- * @CreateDate : 2013-5-27
- * @ModifiedBy : xiaodong.he
- * @ModifiedDate: 2015-6-9
- * @Modified: 2015-6-9: GUI 3.0 update
- */
+
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 @SuppressLint("InlinedApi")
+
 public class WindowService extends Service {
+
     private static final String TAG = "WindowService";
 
     // XD added 20160229
-    public static final String ACTION_START_WINDOWSERVICE =
-            "com.unisound.unicar.gui.ui.START_WINDOWSERVICE";
+    public static final String ACTION_START_WINDOWSERVICE = "com.unisound.unicar.gui.ui.START_WINDOWSERVICE";
     public static final String KEY_IS_COMPILE_FINISH = "isCompileFinish";
-
     public static final String ACTION_SET_WAKEUP = "com.unisound.unicar.gui.ACTION.SET_WAKEUP";
     public static final String ACTION_SET_TTSSPEED = "com.unisound.unicar.gui.ACTION.SET_TTSSPEED";
     public static final String ACTION_SET_GPS = "com.unisound.unicar.gui.ACTION.SET_GPS";
     public static final String ACTION_SET_ONESHOT = "com.unisound.unicar.gui.ACTION.SET_ONESHOT";
     public static final String ACTION_SET_LOGCAT = "com.unisound.unicar.gui.ACTION.SET_LOGCAT";
-    public static final String ACTION_SET_VERSION_LEVEL =
-            "com.unisound.unicar.gui.ACTION.SET_VERSION_LEVEL";
-    public static final String ACTION_SET_TTS_TIMBRE =
-            "com.unisound.unicar.gui.ACTION.SET_TTS_TIMBRE";
+    public static final String ACTION_SET_VERSION_LEVEL = "com.unisound.unicar.gui.ACTION.SET_VERSION_LEVEL";
+    public static final String ACTION_SET_TTS_TIMBRE = "com.unisound.unicar.gui.ACTION.SET_TTS_TIMBRE";
     public static final String ACTION_SET_AEC = "com.unisound.unicar.gui.ACTION.SET_AEC";
     public static final String KEY_SET_TTSSPEED = "SET_TTSSPEED";
 
     /* XD added 20160128 */
-    public static final String ACTION_SET_FAVORITE_ADDRESS =
-            "com.unisound.unicar.gui.ACTION.UPDATE_FAVORITE_ADDRESS";
+    public static final String ACTION_SET_FAVORITE_ADDRESS = "com.unisound.unicar.gui.ACTION.UPDATE_FAVORITE_ADDRESS";
 
     // XD added
-    public static final String ACTION_START_REQUEST_MAKE_FINISHED =
-            "com.unisound.unicar.gui.ACTION.REQUEST_MAKE_FINISHED";
+    public static final String ACTION_START_REQUEST_MAKE_FINISHED = "com.unisound.unicar.gui.ACTION.REQUEST_MAKE_FINISHED";
+
     // XD added 2016-1-18
-    public static final String ACTION_REQUEST_TTS_TIMBRE_LIST =
-            "com.unisound.unicar.gui.ACTION.REQUEST_TTS_TIMBRE_LIST";
+    public static final String ACTION_REQUEST_TTS_TIMBRE_LIST = "com.unisound.unicar.gui.ACTION.REQUEST_TTS_TIMBRE_LIST";
 
     // XD added 2016-1-21 for sub service call back event to VUI
-    public static final String ACTION_SEND_PROTOCAL_EVENT =
-            "com.unisound.unicar.gui.ACTION.SEND_PROTOCAL_EVENT";
+    public static final String ACTION_SEND_PROTOCAL_EVENT = "com.unisound.unicar.gui.ACTION.SEND_PROTOCAL_EVENT";
 
     public static final String ACTION_CUSTOMFROMBT = "com.unisound.unicar.customFromBt";
 
-    private static final String ACTION_MSG_MESSAGEROUTER_START =
-            "com.unisound.unicar.messagerouter.start";
+    private static final String ACTION_MSG_MESSAGEROUTER_START = "com.unisound.unicar.messagerouter.start";
+
 
     public static final String ACTION_UPDATE_WAKEUP_WORD =
             "com.unisound.unicar.gui.ACTION.UPDATE_WAKEUP_WORD";
@@ -229,6 +216,7 @@ public class WindowService extends Service {
     private static final String KEY_TTS_FAILCAUSE = "key_tts_failcause";
 
     private Point mWindowSize = new Point();
+
     private WindowManager mWindowManager;
     private SessionLinearLayout mViewRoot;
     private SessionContainer mSessionContainer;
@@ -241,9 +229,6 @@ public class WindowService extends Service {
     private IMessageRouterService mMessageRouterService;
     private SystemCallTransition messageTransCenter = null;
 
-    // private boolean isNeedRequestIsASRCompileFinished = false;
-
-    /* < XD 20150805 added for Mic float View Begin */
     private List<String> mLauncherPackage;
     private FloatMicView mScreeFloatView;
     private boolean mPendingStartMicChecker;
@@ -318,10 +303,11 @@ public class WindowService extends Service {
 
         @Override
         public boolean dispatchKeyEvent(KeyEvent event) {
-            Logger.d(TAG, "!--->dispatchKeyEvent()---keyCode = " + event.getKeyCode()
-                    + "; action = " + event.getAction() + "; isMainMark = " + isMainMark);
-            if (event.getKeyCode() == KeyEvent.KEYCODE_BACK
-                    && event.getAction() == KeyEvent.ACTION_UP) {
+
+            Logger.d(TAG, "!--->dispatchKeyEvent()---keyCode = " + event.getKeyCode() + "; action = " + event.getAction() + "; isMainMark = " + isMainMark);
+
+            //按下了返回键
+            if (event.getKeyCode() == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
                 mSessionManager.cancelTalk();
                 return true;
             } else {
@@ -332,9 +318,9 @@ public class WindowService extends Service {
                 }
 
             }
-
         }
     };
+
 
     private OnTouchEventListener mOnTouchEventListener = new OnTouchEventListener() {
 
@@ -368,6 +354,7 @@ public class WindowService extends Service {
                 return false;
             }
             Logger.d(TAG, "guiIsIdle PARAM_TTS_FROM : " + PARAM_TTS_FROM);
+
             if (PARAM_TTS_FROM_UNICARNAVI.equals(PARAM_TTS_FROM)
                     || PARAM_TTS_FROM_UNICARGUI.equals(PARAM_TTS_FROM)) {
                 return false;
@@ -390,7 +377,6 @@ public class WindowService extends Service {
                 }
                 return false;
             }
-
         }
     };
 
@@ -401,7 +387,7 @@ public class WindowService extends Service {
         super.onCreate();
         mContext = this;                    //创建上下文
 
-        //
+        //推送的处理
         PushBlockQueue.getInstance().setGuiCallBack(mBinder);
 
         //创建一个通知栏 --> 将进程提升到前台进程
@@ -450,7 +436,7 @@ public class WindowService extends Service {
         startKWMusicService();
 
         //检查喜马拉雅FM是否安装
-        boolean isXmFmInstalled =DeviceTool.checkApkExist(mContext, GUIConfig.PACKAGE_NAME_XMLY_FM);
+        boolean isXmFmInstalled = DeviceTool.checkApkExist(mContext, GUIConfig.PACKAGE_NAME_XMLY_FM);
 
         if (isXmFmInstalled) {
             startXmFmGuiService();    //如果安装 开启喜马拉雅的服务
@@ -489,7 +475,6 @@ public class WindowService extends Service {
         messageTransCenter.setMessageTransListener(mMessageTransListener);
 
 
-
         //
         if (GUIConfig.isAllowGUIRequestAsDefaultSmsApp) {
             DeviceTool.changeGUIToDefaultSmsApp(mContext);
@@ -519,42 +504,54 @@ public class WindowService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
 
         //观察服务是否打开
-        boolean isUnicarServiceInstalled =DeviceTool.isUnicarServiceInstalled(getApplicationContext());
+        boolean isUnicarServiceInstalled = DeviceTool.isUnicarServiceInstalled(getApplicationContext());
 
         //云服务是否打开
         if (!isUnicarServiceInstalled) {
             mSessionManager.showInitFailedView(getString(R.string.error_init_msg_vui_service_not_install));
         }
 
-
         if (intent != null) {
             String action = intent.getAction();
-            Logger.d(TAG, "!--->onStartCommand: action " + action);
             if (ACTION_START_WINDOWSERVICE.equals(action)) {
                 boolean isCompile = intent.getBooleanExtra(KEY_IS_COMPILE_FINISH, false);
-                Logger.d(TAG, "isCompile =  " + isCompile + "; isASRCompile = " + isASRCompile);
                 if (!isCompile && isASRCompile) {
                     sendBroadcastForWechat();
                 }
+
             } else if (MessageReceiver.ACTION_START_TALK.equals(action)) {
+
+                //开始讲话
                 startTalk();
+
             } else if (MessageReceiver.ACTION_MUSIC_DONE.equals(action)) {
+
+                //音乐播放完毕
                 sendMusicDone();
+
             } else if (ACTION_START_REQUEST_MAKE_FINISHED.equals(action)) {
-                Logger.d(TAG, "!--->onStartCommand--ACTION_START_REQUEST_MAKE_FINISHED");
+
+                //请求完成
                 requestIsASRCompileFinished();
+
             } else if (MessageReceiver.ACTION_START_CALL_OUT.equals(action)) {
-                Logger.d(TAG, "!--->onStartCommand--ACTION_START_CALL_OUT----");
+
+                //请求电话
                 requestCallOut();
+
             } else if (MessageReceiver.ACTION_START_NAVIGATION.equals(action)) {
-                Logger.d(TAG, "!--->onStartCommand--ACTION_START_NAVIGATION----");
+
+                //请求导航
                 requestNavication();
             } else if (MessageReceiver.ACTION_START_MUSIC.equals(action)) {
-                Logger.d(TAG, "!--->onStartCommand--ACTION_START_MUSIC----");
+
+                //请求音乐
                 requestMusic();
             } else if (MessageReceiver.ACTION_START_LOCAL_SEARCH.equals(action)) {
-                Logger.d(TAG, "!--->onStartCommand--ACTION_START_LOCAL_SEARCH----");
+
+                //请求本地查询
                 requestLocalSearch();
+
             } else if (ACTION_SET_WAKEUP.equals(action)) {
                 if (UserPerferenceUtil.isWakeupEnable(mContext)) {
                     sendProtocolEvent(SessionPreference.EVENT_NAME_SWITCH_WAKEUP,
@@ -563,15 +560,17 @@ public class WindowService extends Service {
                     sendProtocolEvent(SessionPreference.EVENT_NAME_SWITCH_WAKEUP,
                             SessionPreference.EVENT_PROTOCAL_SWITCH_WAKEUP_STOP);
                 }
-            } else if (ACTION_UPDATE_WAKEUP_WORD.equals(action)) {
-                // XD added 20151029
+            } else if (ACTION_UPDATE_WAKEUP_WORD.equals(action)) {    //更新唤醒词
+
                 String newText = intent.getStringExtra(EXTRA_KEY_WAKEUP_WORD);
                 String oldWakeupWord = UserPerferenceUtil.getWakeupWord(mContext);
                 sendUpdateWakeupWordEvent(oldWakeupWord, newText);
-            } else if (ACTION_UPDATE_LOCATION.equals(action)) {
-                // XD added 20151118
+
+            } else if (ACTION_UPDATE_LOCATION.equals(action)) {      //请求位置
+
                 String newLocation = intent.getStringExtra(EXTRA_KEY_LOCATION);
                 sendkeywordEvent(SessionPreference.EVENT_NAME_UPDATE_POI_KEYWORD, newLocation);
+
             } else if (ACTION_SET_TTSSPEED.equals(action)) {
                 int speed = UserPerferenceUtil.getTTSSpeed(mContext);
                 if (UserPerferenceUtil.VALUE_TTS_SPEED_SLOWLY == speed) {
@@ -775,7 +774,6 @@ public class WindowService extends Service {
         mWindowParams.gravity = Gravity.CENTER;
         updateDisplaySize();
     }
-
 
 
     /**
@@ -1206,7 +1204,6 @@ public class WindowService extends Service {
     }
 
 
-
     //绑定路线服务
     public void bindMessageRouterService() {
         try {
@@ -1252,8 +1249,6 @@ public class WindowService extends Service {
         intent.setAction(UniCarNaviConstant.ACTION_START_UNICARNAVI_GUI_SERVICE);
         mContext.startService(intent);
     }
-
-
 
 
     /**
@@ -1459,8 +1454,9 @@ public class WindowService extends Service {
         sendEvent(SessionPreference.EVENT_NAME_PTT);
     }
 
+
+    //音乐播放完毕
     public void sendMusicDone() {
-        Logger.d(TAG, "sendMusicDone");
         sendEvent(SessionPreference.EVENT_MUSIC_DONE);
     }
 
@@ -1557,7 +1553,7 @@ public class WindowService extends Service {
      * TYZ addded 20151013 XD modify 20151023
      *
      * @param eventName
-     * @param keyWords
+     * @param keyWord
      */
     private void sendkeywordEvent(String eventName, String keyWord) {
         // String eventMsg =
@@ -1619,20 +1615,18 @@ public class WindowService extends Service {
     }
 
     /**
-     * IS_ASR_COMPILE_FINISH
+     * IS_ASR_COMPILE_FINISH  语音识别是否完成
      */
     public void requestIsASRCompileFinished() {
-        Logger.d(TAG, "!--->sendIsASRCompileFinished---Begin---");
         if (mMessageRouterService == null) {
-            // isNeedRequestIsASRCompileFinished = true;
-            rebindMessageRouterService();
+            rebindMessageRouterService();     //重新绑定处理
             return;
         }
-        String eventMsg =
-                "{\"type\":\"EVENT\",\"data\":{\"moduleName\":\"GUI\",\"eventName\":\"IS_ASR_COMPILE_FINISH\"}}";
+        String eventMsg ="{\"type\":\"EVENT\",\"data\":{\"moduleName\":\"GUI\",\"eventName\":\"IS_ASR_COMPILE_FINISH\"}}";
         sendMsg(eventMsg);
-        Logger.d(TAG, "!--->sendIsASRCompileFinished---Finished---");
     }
+
+
 
     /**
      * requestSupportDomainList xd added 20150702
@@ -1645,35 +1639,36 @@ public class WindowService extends Service {
     }
 
     /**
-     *
+     * 请求打出电话
      */
     public void requestCallOut() {
-        Logger.d(TAG, "!--->requestCallOut()----");
         String eventMsg =
                 "{\"type\":\"EVENT\",\"data\":{\"moduleName\":\"GUI\",\"eventName\":\"MAIN_ACTION\"},\"param\":{\"type\":\"call\"}}";
         sendMsg(eventMsg);
     }
 
+    /**
+     * 请求导航
+     */
     public void requestNavication() {
-        Logger.d(TAG, "!--->requestNavication()----");
         isMainMark = true;
-        String eventMsg =
-                "{\"type\":\"EVENT\",\"data\":{\"moduleName\":\"GUI\",\"eventName\":\"MAIN_ACTION\"},\"param\":{\"type\":\"navi\"}}";
+        String eventMsg ="{\"type\":\"EVENT\",\"data\":{\"moduleName\":\"GUI\",\"eventName\":\"MAIN_ACTION\"},\"param\":{\"type\":\"navi\"}}";
         sendMsg(eventMsg);
     }
 
+    /**
+     * 请求音乐
+     */
     public void requestMusic() {
-        Logger.d(TAG, "!--->requestMusic()----");
         String eventMsg =
                 "{\"type\":\"EVENT\",\"data\":{\"moduleName\":\"GUI\",\"eventName\":\"MAIN_ACTION\"},\"param\":{\"type\":\"music\"}}";
         sendMsg(eventMsg);
     }
 
     /**
-     * request Local Search XD added 20150713
+     * 请求本地查找
      */
     public void requestLocalSearch() {
-        Logger.d(TAG, "!--->requestLocalSearch()----");
         isMainMark = true;
         String eventMsg =
                 "{\"type\":\"EVENT\",\"data\":{\"moduleName\":\"GUI\",\"eventName\":\"MAIN_ACTION\"},\"param\":{\"type\":\"localsearch\"}}";
@@ -1684,8 +1679,6 @@ public class WindowService extends Service {
      * write Contacts Info
      */
     private void writeContactsInfo() {
-        Logger.d(TAG, "!--->writeContactsInfo()-----");
-        /* < XD added 20150706 begin */
         if (PackageUtil.isRunningForeground(WindowService.this)) {
             mSessionManager.showInitView(true);
         }
@@ -2545,9 +2538,6 @@ public class WindowService extends Service {
     }
 
 
-
-
-
     private OnClickListener mOnClickListener = new OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -2955,8 +2945,6 @@ public class WindowService extends Service {
 
         startForegroundCompat(NOTIFICATION_ID, notification);
     }
-
-
 
 
     void invokeMethod(Method method, Object[] args) {
