@@ -10,15 +10,6 @@
  */
 package com.unisound.unicar.gui.ui;
 
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -58,8 +49,6 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import cn.yunzhisheng.common.PinyinConverter;
 
 import com.amap.api.services.core.LatLonPoint;
 import com.amap.api.services.geocoder.GeocodeResult;
@@ -121,6 +110,17 @@ import com.unisound.unicar.gui.view.SessionContainer;
 import com.unisound.unicar.gui.view.SessionLinearLayout;
 import com.unisound.unicar.gui.view.SessionLinearLayout.DispatchKeyEventListener;
 import com.unisound.unicar.gui.view.SessionLinearLayout.OnTouchEventListener;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
+
+import cn.yunzhisheng.common.PinyinConverter;
 
 
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
@@ -514,48 +514,34 @@ public class WindowService extends Service {
         }
 
         if (intent != null) {
-
             String action = intent.getAction();
             if (ACTION_START_WINDOWSERVICE.equals(action)) {
                 boolean isCompile = intent.getBooleanExtra(KEY_IS_COMPILE_FINISH, false);
                 if (!isCompile && isASRCompile) {
-                    sendBroadcastForWechat();
+                    sendBroadcastForWechat();   //发广播开启微信
                 }
             } else if (MessageReceiver.ACTION_START_TALK.equals(action)) {
-
                 //开始讲话
                 startTalk();
-
             } else if (MessageReceiver.ACTION_MUSIC_DONE.equals(action)) {
-
                 //音乐播放完毕
                 sendMusicDone();
-
             } else if (ACTION_START_REQUEST_MAKE_FINISHED.equals(action)) {
-
                 //请求完成
                 requestIsASRCompileFinished();
-
             } else if (MessageReceiver.ACTION_START_CALL_OUT.equals(action)) {
-
                 //请求电话
                 requestCallOut();
-
             } else if (MessageReceiver.ACTION_START_NAVIGATION.equals(action)) {
-
                 //请求导航
                 requestNavication();
             } else if (MessageReceiver.ACTION_START_MUSIC.equals(action)) {
-
                 //请求音乐
                 requestMusic();
             } else if (MessageReceiver.ACTION_START_LOCAL_SEARCH.equals(action)) {
-
                 //请求本地查询
                 requestLocalSearch();
-
             } else if (ACTION_SET_WAKEUP.equals(action)) {
-
                 //设置唤醒
                 if (UserPerferenceUtil.isWakeupEnable(mContext)) {
                     sendProtocolEvent(SessionPreference.EVENT_NAME_SWITCH_WAKEUP,
@@ -1549,7 +1535,7 @@ public class WindowService extends Service {
         String eventMsg =
                 "{\"type\":\"EVENT\",\"data\":{\"moduleName\":\"GUI\",\"eventName\":" + eventName
                         + "}}";
-        Logger.d(TAG, "-sendEvent- eventMsg : " + eventMsg);
+
         sendMsg(eventMsg);
     }
 

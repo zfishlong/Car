@@ -10,17 +10,6 @@
  */
 package com.unisound.unicar.gui.utils;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.Random;
-import java.util.concurrent.ConcurrentHashMap;
-
-import org.json.JSONObject;
-
 import android.content.ContentResolver;
 import android.content.Context;
 import android.database.Cursor;
@@ -29,9 +18,19 @@ import android.net.Uri;
 import android.os.Environment;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Contacts;
-import android.util.Log;
 
 import com.unisound.unicar.gui.model.ContactInfo;
+
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.Random;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Contacts Util
@@ -466,33 +465,33 @@ public class ContactsUtil {
      * @param ctx
      */
     public static void testReadAllContacts(Context ctx) {
-        Logger.d(TAG, "!-->testReadAllContacts()------");
+
         StringBuffer buffer = new StringBuffer();
 
-        Cursor cursor =
-                ctx.getContentResolver().query(ContactsContract.Contacts.CONTENT_URI, null, null,
-                        null, null);
+        //读取手机联系人
+        Cursor cursor =ctx.getContentResolver().query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
         int contactIdIndex = 0;
         int nameIndex = 0;
 
+        //获取到_id 所在的列  获取到Name所在的列
         if (cursor.getCount() > 0) {
             contactIdIndex = cursor.getColumnIndex(ContactsContract.Contacts._ID);
             nameIndex = cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME);
         }
+
         while (cursor.moveToNext()) {
             String contactId = cursor.getString(contactIdIndex);
             String name = cursor.getString(nameIndex);
 
-            // Logger.i(TAG, "contactId = "+contactId+"; name = "+name);
             /*
-             * 查找该联系人的phone信息
+             * 根据下换线_id查找该联系人的phone信息
              */
-            Cursor phones =
-                    ctx.getContentResolver().query(
-                            ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null,
+            Cursor phones =ctx.getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null,
                             ContactsContract.CommonDataKinds.Phone.CONTACT_ID + "=" + contactId,
                             null, null);
+
             int phoneIndex = 0;
+
             if (phones.getCount() > 0) {
                 phoneIndex = phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
             }
@@ -501,32 +500,31 @@ public class ContactsUtil {
                 String content = contactId + ";" + name + ";" + phoneNumber;
 
                 buffer.append(content + "\n");
-                Logger.i(TAG, "!--->contactId = " + contactId + "; name = " + name
-                        + "; phoneNumber = " + phoneNumber);
-
+                Logger.i(TAG, "!--->contactId = " + contactId + "; name = " + name + "; phoneNumber = " + phoneNumber);
             }
 
             /*
              * 查找该联系人的email信息
              */
-            // Cursor emails =
-            // ctx.getContentResolver().query(ContactsContract.CommonDataKinds.Email.CONTENT_URI,
-            // null,
-            // ContactsContract.CommonDataKinds.Email.CONTACT_ID + "=" + contactId,
-            // null, null);
-            // int emailIndex = 0;
-            // if(emails.getCount() > 0) {
-            // emailIndex = emails.getColumnIndex(ContactsContract.CommonDataKinds.Email.DATA);
-            // }
-            // while(emails.moveToNext()) {
-            // String email = emails.getString(emailIndex);
-            // Logger.i(TAG, email);
-            // }
+            Cursor emails =
+                    ctx.getContentResolver().query(ContactsContract.CommonDataKinds.Email.CONTENT_URI,
+                            null,
+                            ContactsContract.CommonDataKinds.Email.CONTACT_ID + "=" + contactId,
+                            null, null);
+
+            int emailIndex = 0;
+
+            if (emails.getCount() > 0) {
+                emailIndex = emails.getColumnIndex(ContactsContract.CommonDataKinds.Email.DATA);
+            }
+
+            while (emails.moveToNext()) {
+                String email = emails.getString(emailIndex);
+            }
 
         }
 
         boolean result = FileOperation.writeContacts(buffer.toString());
-        Logger.d(TAG, "!--->result = " + result);
     }
 
     /**

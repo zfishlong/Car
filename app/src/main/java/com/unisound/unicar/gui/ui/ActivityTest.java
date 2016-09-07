@@ -22,7 +22,7 @@ public class ActivityTest extends Activity implements OnClickListener {
     private final static String TAG = "MainActivity";
     private Context mContext;
     private IMessageRouterService mService;
-    private Button mBtnConn, mBtnReg, mBtnSendEvent, mBtnSendMsg, btnWriteContactsInfo;
+    private Button mBtnConn, mBtnReg, mBtnSendEvent, mBtnSendMsg, btnWriteContactsInfo;  //
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -126,6 +126,7 @@ public class ActivityTest extends Activity implements OnClickListener {
         public void onCallBack(String callBackJson) throws RemoteException {
             Log("onCallBack : " + callBackJson);
             SystemCallFunction systemCallFunction = new SystemCallFunction();
+
             systemCallFunction.showRecognizerDialog();
         }
     };

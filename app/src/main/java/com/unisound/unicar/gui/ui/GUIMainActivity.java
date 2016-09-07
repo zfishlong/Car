@@ -126,6 +126,7 @@ public class GUIMainActivity extends Activity implements OnClickListener {
 
 
         setContentView(R.layout.activity_main);
+
         mLayoutInflater = getLayoutInflater();
         mContext = getApplicationContext();                 //获取整个应用的上下文
 
