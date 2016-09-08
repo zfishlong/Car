@@ -25,18 +25,16 @@ import android.os.Build;
 import android.os.Environment;
 import android.text.TextUtils;
 
-/**
- * @author Brant
- * @decription
- */
+
 public class FileHelper {
+
     private String mPath;
     private File mFile;
-    private static final SimpleDateFormat mDateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss",
-            Locale.getDefault());
+
+    private static final SimpleDateFormat mDateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss", Locale.getDefault());
 
     public FileHelper(String path) {
-        path = path == null ? "" : path;
+        path = (path == null ? "" : path);
         mPath = path;
         mFile = new File(path);
     }
@@ -58,8 +56,7 @@ public class FileHelper {
 
     /**
      * 获取指定目录下相应文件的内容
-     * 
-     * @param fileName
+     *
      * @return
      * @throws FileNotFoundException
      */

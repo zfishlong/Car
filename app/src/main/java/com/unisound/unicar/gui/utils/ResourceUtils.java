@@ -17,12 +17,11 @@ public class ResourceUtils {
     }
 
     /**
-     * get the dimens.xml defined text size
-     * 
+     * 获取 dimens.xml 定义的文本的值
      * @param context
      * @param resourceId
      * @return if R.dimen.id defined is dp size return the dp size; if R.dimen.id defined is sp size
-     *         return thesp size
+     *         return the sp size
      */
     public static int getDimenXmlDefSize(Context context, int resourceId) {
         synchronized (mTmpValue) {

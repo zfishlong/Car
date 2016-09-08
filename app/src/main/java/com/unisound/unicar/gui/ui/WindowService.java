@@ -352,9 +352,11 @@ public class WindowService extends Service {
         @Override
         public boolean guiIsIdle() throws RemoteException {
             boolean rootShow = isViewRootShow();
+
             if (TelephonyManager.CALL_STATE_IDLE != phoneStats) {
                 return false;
             }
+
             Logger.d(TAG, "guiIsIdle PARAM_TTS_FROM : " + PARAM_TTS_FROM);
 
             if (PARAM_TTS_FROM_UNICARNAVI.equals(PARAM_TTS_FROM)

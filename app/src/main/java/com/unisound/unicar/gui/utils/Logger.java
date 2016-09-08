@@ -2,11 +2,6 @@ package com.unisound.unicar.gui.utils;
 
 import android.util.Log;
 
-/**
- * 
- * @author xiaodong
- * @date 20150617
- */
 public class Logger {
 
     private static final String TAG = "UniCarGUI";
@@ -31,26 +26,8 @@ public class Logger {
         if (DEBUG) Log.d(TAG, obj.toString());
     }
 
-    // public static void d(Object paramObject, String msg) {
-    // if (!DEBUG)
-    // return;
-    // if (paramObject == null) {
-    // Log.d(TAG, msg);
-    // return;
-    // }
-    // if ((paramObject instanceof Class)) {
-    // Log.d(((Class) paramObject).getSimpleName(), msg);
-    // return;
-    // }
-    // if ((paramObject instanceof String)) {
-    // Log.d(paramObject.toString(), msg);
-    // return;
-    // }
-    // Log.d(paramObject.getClass().getSimpleName(), msg);
-    // }
-
     public static void d(String tag, String msg) {
-        if (DEBUG) Log.d(tag, "!--->" + msg);
+        if (DEBUG) Log.d(tag,msg);
     }
 
     public static void d(String msg) {
@@ -86,6 +63,5 @@ public class Logger {
     public static void printStackTrace(Exception e) {
         if (DEBUG) Log.e(TAG, e.toString());
     }
-
 
 }

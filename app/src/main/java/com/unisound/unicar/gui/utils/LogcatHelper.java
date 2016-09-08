@@ -1,5 +1,8 @@
 package com.unisound.unicar.gui.utils;
 
+import android.content.Context;
+import android.os.Environment;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,34 +10,21 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import android.content.Context;
-import android.os.Environment;
 
+/**
+ * 日志的记录 -->这玩意一般在调试的时候用到
+ * 上线时候应该去掉否则太消耗性能了
+ */
 public class LogcatHelper {
+
     private static LogcatHelper INSTANCE = null;
     private static String PATH_LOGCAT;
     private int mPId;
     private LogDumper mLogDumper;
 
-    /**
-     * 
-     * 初始化目录
-     * 
-     * */
-    public void init(Context context) {
-        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {// 优先保存到SD卡中
-            PATH_LOGCAT =
-                    Environment.getExternalStorageDirectory().getAbsolutePath()
-                            + "/YunZhiSheng/logcat/uniCarSolution/";
-        } else {// 如果SD卡不存在，就保存到本应用的目录下
-            PATH_LOGCAT =
-                    context.getFilesDir().getAbsolutePath() + File.separator
-                            + "YunZhiSheng/logcat/uniCarSolution/";
-        }
-        File file = new File(PATH_LOGCAT);
-        if (!file.exists()) {
-            file.mkdirs();
-        }
+    private LogcatHelper(Context context) { //私有构造函数
+        init(context);                      //初始化目录
+        mPId = android.os.Process.myPid();
     }
 
     public static LogcatHelper getInstance(Context context) {
@@ -44,17 +34,36 @@ public class LogcatHelper {
         return INSTANCE;
     }
 
-    private LogcatHelper(Context context) {
-        init(context);
-        mPId = android.os.Process.myPid();
+
+    /**
+     * 初始化目录
+     */
+    public void init(Context context) {
+        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {// 优先保存到SD卡中
+            PATH_LOGCAT =
+                    Environment.getExternalStorageDirectory().getAbsolutePath() +
+                            "/YunZhiSheng/logcat/uniCarSolution/";
+        } else {                        // 如果SD卡不存在，就保存到本应用的目录下
+            PATH_LOGCAT =
+                    context.getFilesDir().getAbsolutePath() + File.separator +
+                            "YunZhiSheng/logcat/uniCarSolution/";
+        }
+
+        File file = new File(PATH_LOGCAT);
+        if (!file.exists()) {
+            file.mkdirs();
+        }
     }
 
+
+    //开始
     public synchronized void start() {
         stop();
         mLogDumper = new LogDumper(String.valueOf(mPId), PATH_LOGCAT);
         mLogDumper.start();
     }
 
+    //停止
     public synchronized void stop() {
         if (mLogDumper != null) {
             mLogDumper.stopLogs();
@@ -62,6 +71,7 @@ public class LogcatHelper {
         }
     }
 
+    //是否在运行
     public boolean isRunning() {
         if (mLogDumper != null) {
             return mLogDumper.getThreadState();
@@ -70,6 +80,7 @@ public class LogcatHelper {
         }
     }
 
+    //log
     private class LogDumper extends Thread {
         private Process logcatProc;
         private BufferedReader mReader = null;
@@ -77,6 +88,7 @@ public class LogcatHelper {
         String cmds = null;
         private String mPID;
         private FileOutputStream out = null;
+
 
         public LogDumper(String pid, String dir) {
             try {

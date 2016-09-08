@@ -33,31 +33,34 @@ import android.util.DisplayMetrics;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-/**
- * @Module : 隶属模块名
- * @Comments : 描述
- * @Author :
- * @CreateDate : 2014-2-25
- * @ModifiedBy : XD
- * @ModifiedDate: 2015-8-4
- * @Modified:
- */
+
 @SuppressLint("NewApi")
 public class DeviceTool {
     public static final String TAG = "DeviceTool";
 
     private static final String INVALID_IMEI = "000000000000000";
 
+
+    /**
+     * 获取设备的id
+     * @param context 上下文
+     * @return
+     */
     public static String getDeviceId(Context context) {
         String deviceId = getIMEI(context);
         return (deviceId == null || deviceId.equals("")) ? INVALID_IMEI : deviceId;
     }
 
+
+    /**
+     * 获取设备的IMEI号
+     * @param context
+     * @return
+     */
     public static String getIMEI(Context context) {
         String imei = "";
-        imei =
-                ((TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE))
-                        .getDeviceId();
+        imei =((TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId();
+
         if (imei != null && !"".equals(imei) && !imei.equals(INVALID_IMEI)) {
             return imei;
         }
@@ -66,6 +69,7 @@ public class DeviceTool {
         if (imei != null && !"".equals(imei) && !imei.equals(INVALID_IMEI)) {
             return imei;
         }
+
         WifiManager wifi = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
         WifiInfo info = wifi.getConnectionInfo();
         if (info != null) {
@@ -75,6 +79,11 @@ public class DeviceTool {
 
     }
 
+    /**
+     * 获取到设备的Mac地址
+     * @param context
+     * @return
+     */
     public static String getMac(Context context) {
         if (context == null) {
             return INVALID_IMEI;
@@ -87,33 +96,35 @@ public class DeviceTool {
         return INVALID_IMEI;
     }
 
+    /**
+     * 获取到程序的完整名称
+     * @param context
+     * @return
+     */
     public static String getAppVersionName(Context context) {
         String versionName = "";
-
         try {
-            PackageInfo packageInfo =
-                    context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
-
+            PackageInfo packageInfo =context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
             versionName = packageInfo.versionName;
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return versionName;
     }
 
+    /**
+     * 获取到程序的包名信息
+     * @param context
+     * @return
+     */
     public static String getAppPackageName(Context context) {
         String packageName = "";
-
         try {
-            PackageInfo packageInfo =
-                    context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
-
+            PackageInfo packageInfo =context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
             packageName = packageInfo.packageName;
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return packageName;
     }
 
@@ -127,6 +138,7 @@ public class DeviceTool {
     public static boolean isUnicarServiceInstalled(Context context) {
         return checkApkExist(context, GUIConfig.PACKAGE_NAME_UNICAR_VUI);
     }
+
 
     /**
      * check Apk Exist added by xiaodong 20150706
@@ -150,7 +162,7 @@ public class DeviceTool {
     }
 
     /**
-     * 判断SDCard是否存在 [当没有外挂SD卡时，内置ROM也被识别为存在sd卡] XD added
+     * 判断SDCard是否存在 [当没有外挂SD卡时，内置ROM也被识别为存在sd卡]
      * 
      * @return
      */
@@ -159,10 +171,7 @@ public class DeviceTool {
     }
 
     /**
-     * is Available SDcard Space
-     * 
-     * @author xiaodong.he
-     * @date 2015-12-01
+     * SD 卡的空间是否满足某一个值
      * @param sizeMb : MIN size
      * @return
      */
@@ -184,9 +193,11 @@ public class DeviceTool {
         return isHasSpace;
     }
 
+
+
+
     /**
-     * is Available Internal Memory
-     * 
+     * 内部内存是否可用
      * @param sizeMb: MIN limit size
      * @return
      */
@@ -200,8 +211,7 @@ public class DeviceTool {
     }
 
     /**
-     * get device Available Internal Memory Size
-     * 
+     * 获取设备的内部可用内存
      * @return MB
      */
     public static long getAvailableInternalMemorySize() {
@@ -216,18 +226,19 @@ public class DeviceTool {
 
 
     /**
-     * 
-     * @return 10 Android 2.3.3-2.3.7; 13 Android 3.2; 14 Android 4.0; 19 Android 4.4 KitKat
+     * @return 版本号
+     * 10 Android 2.3.3-2.3.7;
+     * 13 Android 3.2;
+     * 14 Android 4.0;
+     * 19 Android 4.4 KitKat
      */
-    @SuppressWarnings("deprecation")
     public static int getDeviceSDKVersion() {
         int sdkVersion = Build.VERSION.SDK_INT;// Integer.parseInt(Build.VERSION.SDK);
-        Logger.d(TAG, "!--->sdkVersion = " + sdkVersion);
         return sdkVersion;
     }
 
     /**
-     * 
+     * 获取屏幕的显示信息
      * @return
      */
     public static DisplayMetrics getDisplayMetrics(Context context) {
@@ -236,8 +247,7 @@ public class DeviceTool {
     }
 
     /**
-     * getScreenHight pix XD added 20150820
-     * 
+     * 获取屏幕的高度
      * @param context
      * @return
      */
@@ -247,8 +257,7 @@ public class DeviceTool {
     }
 
     /**
-     * get Screen Width pix XD added 20150820
-     * 
+     * 获取屏幕的宽度
      * @param context
      * @return
      */
@@ -258,8 +267,7 @@ public class DeviceTool {
     }
 
     /**
-     * get Screen Density XD added 20150820
-     * 
+     * 获取屏幕的密度
      * @param context
      * @return
      */
@@ -269,8 +277,7 @@ public class DeviceTool {
     }
 
     /**
-     * get Status Bar Height XD added 20150831
-     * 
+     * 获取状态栏的高度
      * @param context
      * @return
      */
@@ -285,28 +292,24 @@ public class DeviceTool {
     }
 
     /**
-     * isScreenLandscape
-     * 
+     * 屏幕是否是横屏
      * @param context
      * @return
      */
     public static boolean isScreenLandscape(Context context) {
         int orientation = context.getResources().getConfiguration().orientation;
         if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            Logger.i(TAG, "!--->isScreenLandscape---landscape");
             return true;
         } else if (orientation == Configuration.ORIENTATION_PORTRAIT) {
-            Logger.i(TAG, "!--->isScreenLandscape---portrait");
+            return false;
         }
         return false;
     }
 
 
-    /* < XD added 20150826 for default SMS App Begin */
     /**
-     * get Default Sms App Name XD added 20150825
-     * 
-     * @param context
+     * 获取默认的短信程序名称
+     * @param context 上下文
      * @return
      */
     public static String getDefaultSmsAppName(Context context) {
@@ -315,9 +318,9 @@ public class DeviceTool {
         return smsApp;
     }
 
+
     /**
-     * change Default SMS App XD added 20150825
-     * 
+     * 改变默认的短信应用
      * @param context
      * @param packageName
      */
@@ -336,8 +339,7 @@ public class DeviceTool {
     public static void changeGUIToDefaultSmsApp(Context context) {
         Logger.d(TAG, "!--->changeGUIToDefaultSmsApp-----");
         if (getDeviceSDKVersion() < 19) {
-            Logger.d(TAG,
-                    "!---> DeviceSDKVersion lesstion than 19, no neeed changeGUIToDefaultSmsApp");
+            Logger.d(TAG,"!---> DeviceSDKVersion lesstion than 19, no neeed changeGUIToDefaultSmsApp");
             return;
         }
 
@@ -372,10 +374,7 @@ public class DeviceTool {
 
 
     /**
-     * show Keyboard control
-     * 
-     * @author xiaodong.he
-     * @date 2015-10-27
+     * 控制某一个editText上键盘输入是否可用
      * @param editText
      * @param isShow
      */

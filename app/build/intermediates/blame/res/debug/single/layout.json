@@ -12,12 +12,12 @@
         "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\list_item_load_next_pre.xml"
     },
     {
-        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_localsearch.xml",
-        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\list_item_localsearch.xml"
-    },
-    {
         "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
         "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_localsearch.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\list_item_localsearch.xml"
     },
     {
         "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_all_function.xml",
@@ -96,12 +96,12 @@
         "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\activity_gaode_route.xml"
     },
     {
-        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\function_help_activity_list_item.xml",
-        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\function_help_activity_list_item.xml"
-    },
-    {
         "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\localsearch.xml",
         "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\localsearch.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\function_help_activity_list_item.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\function_help_activity_list_item.xml"
     },
     {
         "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\help_listview_menu_title.xml",
@@ -204,12 +204,12 @@
         "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\view_i_know_button.xml"
     },
     {
-        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\session_question_view.xml",
-        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\session_question_view.xml"
-    },
-    {
         "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_search_location.xml",
         "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\layout_search_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\session_question_view.xml",
+        "source": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\src\\main\\res\\layout\\session_question_view.xml"
     },
     {
         "merged": "C:\\Users\\xiaoJie\\AndroidStudioProjects\\Car\\app\\build\\intermediates\\res\\merged\\debug\\layout\\general_answer_view.xml",
